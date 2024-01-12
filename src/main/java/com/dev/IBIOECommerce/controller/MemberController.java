@@ -15,4 +15,88 @@ public class MemberController {
 		
 		return "memberIndex";
 	}
+	
+	@GetMapping("/myInfo")
+	public String myInfo() {
+		
+		return "front/member/myInfo";
+	}
+	
+	@GetMapping("/myTrading")
+	public String myTrading() {
+		
+		return "front/member/myTrading";
+	}
+	
+	@GetMapping("/myPayment")
+	public String myPayment() {
+		
+		return "front/member/myPayment";
+	}
+	
+	@GetMapping("/myDelivery")
+	public String myDelivery() {
+		
+		return "front/member/myDelivery";
+	}
+	
+	@GetMapping("/viewCart")
+	public String viewCart() {
+		
+		return "front/member/viewCart";
+	}
+	
+	@GetMapping("/checkOut")
+	public String checkOut() {
+		
+		return "front/member/checkOut";
+	}
+	
+	@GetMapping("/wishList")
+	public String wishList() {
+		
+		return "front/member/wishList";
+	}
+	
+	@GetMapping("/productCompare")
+	public String productCompare() {
+		
+		return "front/member/productCompare";
+	}
+	
+	@GetMapping("/deliveryDetail")
+	public String deliveryDetail() {
+		
+		return "front/member/detail/deliveryDetail";
+	}
+	
+	@GetMapping("/tradingDetail")
+	public String tradingDetail() {
+		
+		return "front/member/detail/tradingDetail";
+	}
+	
+	@GetMapping("/paymentDetail")
+	public String paymentDetail() {
+		
+		return "front/member/detail/paymentDetail";
+	}
+	
+	@GetMapping("/refundProduct")
+	public String refundProduct() {
+		
+		return "front/member/refundProduct";
+	}
+	
+	@GetMapping("/couponInsert")
+	public String couponInsert() {
+		
+		return "front/member/couponInsert";
+	}
+	
+	@GetMapping("/paymentResult")
+	public String paymentResult() {
+		
+		return "front/member/paymentResult";
+	}
 }
