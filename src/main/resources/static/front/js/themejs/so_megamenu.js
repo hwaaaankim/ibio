@@ -79,14 +79,14 @@ $(document).ready(function() {
 		}		
 		$(this).children(".sub-menu").css("right", "auto");
 			if ($("html").css("direction").toLowerCase() == "rtl"){
-				var $whatever        = $(this).children(".sub-menu");
+				/*var $whatever        = $(this).children(".sub-menu");*/
 				var $whatever2       =  $($whatever).closest('ul.megamenu');
 				if($whatever.offset().left < $whatever2.offset().left) {
 					$(this).children(".sub-menu").css("right", "0");
 				}				
 			}else{
 				var $whatever        = $(this).children(".sub-menu");
-				var ending_right     = ($(window).width() - ($whatever.offset().left + $whatever.outerWidth()));
+				/*var ending_right     = ($(window).width() - ($whatever.offset().left + $whatever.outerWidth()));*/
 				var $whatever2       =  $($whatever).closest('ul.megamenu');
 				var ending_right2    = ($(window).width() - ($whatever2.offset().left + $whatever2.outerWidth()));
 				if(ending_right2 > ending_right) {

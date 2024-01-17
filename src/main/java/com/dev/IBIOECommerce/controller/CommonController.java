@@ -122,7 +122,11 @@ public class CommonController {
 		return "front/common/event/eventDetail";
 	}
 	
-	
+	@GetMapping("/productCompare")
+	public String productCompare() {
+		
+		return "front/common/product/productCompare";
+	}
 	
 	
 	

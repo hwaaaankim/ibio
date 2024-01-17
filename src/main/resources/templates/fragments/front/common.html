@@ -1,9 +1,5 @@
 <!DOCTYPE html>
-<html 
-lang="ko" 
-xmlns:th="http://www.thymeleaf.org"
-xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
->
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 
 <head th:fragment="headSrc">
 
@@ -97,7 +93,9 @@ xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
 		<div class="container">
 			<div class="row">
 				<div class="header-top-left col-lg-7 col-md-8 col-sm-6 col-xs-4">
-					<div class="hidden-md hidden-sm hidden-xs welcome-msg">고객센터 / EMail</div>
+					<div class="hidden-md hidden-sm hidden-xs welcome-msg"><i class="fa fa-envelope"></i> Email:
+						Design@domain.com &nbsp&nbsp<i class="fa fa-phone"></i> Hotline: (888) 4344 6000 - (888) 1338
+						8193</div>
 				</div>
 				<div class="header-top-right collapsed-block col-lg-5 col-md-4 col-sm-6 col-xs-8">
 					<ul class="top-link list-inline lang-curr">
@@ -124,7 +122,13 @@ xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
 													title="Arabic" /> 배송 조회 </a> </li>
 										<li> <a href="/member/couponInsert"> <img class="image_flag"
 													src="/front/image/catalog/flags/ar.png" alt="Arabic"
-													title="Arabic" /> 쿠폰관리 </a> </li>				
+													title="Arabic" /> 쿠폰관리 </a> </li>
+										<li> <a href="/dealer"> <img class="image_flag"
+													src="/front/image/catalog/flags/ar.png" alt="Arabic"
+													title="Arabic" /> 제품 관리자 </a> </li>	
+										<li> <a href="/admin"> <img class="image_flag"
+													src="/front/image/catalog/flags/ar.png" alt="Arabic"
+													title="Arabic" /> 사이트 관리자 </a> </li>			
 									</ul>
 								</form>
 							</div>
@@ -134,19 +138,15 @@ xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
 			</div>
 		</div>
 	</div>
-	<!-- //Header Top -->
 
-	<!-- Header center -->
 	<div class="header-middle">
 		<div class="container">
 			<div class="row">
-				<!-- Logo -->
 				<div class="navbar-logo col-lg-2 col-md-3 col-sm-4 col-xs-12">
 					<div class="logo"><a href="/index"><img src="/front/image/catalog/logo.png" title="IBIO"
 								alt="IBIO" /></a></div>
 				</div>
-				<!-- //end Logo -->
-				<!-- Search -->
+
 				<div class="col-lg-7 col-md-6 col-sm-5">
 					<div class="search-header-w">
 						<div class="icon-search hidden-lg hidden-md hidden-sm"><i class="fa fa-search"></i>
@@ -185,7 +185,6 @@ xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
 				</div>
 				<!-- //end Search -->
 				<div class="middle-right col-lg-3 col-md-3 col-sm-3">
-					<!--cart-->
 					<div class="shopping_cart">
 						<div id="cart" class="btn-shopping-cart">
 
@@ -352,215 +351,7 @@ xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
 															<span>CATEGORY</span>
 															<b class="fa-angle-right"></b>
 														</a>
-														<div class="sub-menu" data-subwidth="60">
-															<div class="content">
-																<div class="row">
-																	<div class="col-sm-12">
-																		<div class="row">
-																			<div class="col-md-4 static-menu">
-																				<div class="menu">
-																					<ul>
-																						<li>
-																							<a href="#"
-																								class="main-menu">CATEGORY</a>
-																							<ul>
-																								<li><a
-																										href="category.html">CATEGORY01</a>
-																								</li>
-																								<li><a
-																										href="category-v2.html">CATEGORY02</a>
-																								</li>
-																								<li><a
-																										href="category-v3.html">CATEGORY03</a>
-																								</li>
-																								<li><a
-																										href="#">CATEGORY</a>
-																								</li>
-																								<li><a
-																										href="#">CATEGORY</a>
-																								</li>
-																								<li><a
-																										href="#">CATEGORY</a>
-																								</li>
-																							</ul>
-																						</li>
-																						<li>
-																							<a href="#"
-																								class="main-menu">CATEGORY</a>
-																							<ul>
-																								<li><a
-																										href="#">CATEGORY</a>
-																								</li>
-																								<li><a
-																										href="#">CATEGORY</a>
-																								</li>
-																								<li><a
-																										href="#">CATEGORY</a>
-																								</li>
-																							</ul>
-																						</li>
-																					</ul>
-																				</div>
-																			</div>
-																			<div class="col-md-4 static-menu">
-																				<div class="menu">
-																					<ul>
-																						<li>
-																							<a href="#"
-																								class="main-menu">CATEGORY</a>
-																							<ul>
-																								<li><a
-																										href="#">CATEGORY</a>
-																								</li>
-																								<li><a
-																										href="#">CATEGORY</a>
-																								</li>
-																								<li><a
-																										href="#">CATEGORY</a>
-																								</li>
-																							</ul>
-																						</li>
-																						<li>
-																							<a href="#"
-																								class="main-menu">CATEGORY</a>
-																							<ul>
-																								<li><a
-																										href="#">CATEGORY</a>
-																								</li>
-																								<li><a
-																										href="#">CATEGORY</a>
-																								</li>
-																								<li><a
-																										href="#">CATEGORY</a>
-																								</li>
-																							</ul>
-																						</li>
-																					</ul>
-																				</div>
-																			</div>
-																			<div class="col-md-4 static-menu">
-																				<div class="menu">
-																					<ul>
-																						<li>
-																							<a href="#"
-																								class="main-menu">CATEGORY</a>
-																							<ul>
-																								<li><a href="#"
-																										onclick="window.location = '18_46';">CATEGORY</a>
-																								</li>
-																								<li><a href="#"
-																										onclick="window.location = '24_64';">CATEGORY</a>
-																								</li>
-																								<li><a href="#"
-																										onclick="window.location = '18_45';">CATEGORY</a>
-																								</li>
-																								<li><a href="#"
-																										onclick="window.location = '18_30';">CATEGORY</a>
-																								</li>
-																							</ul>
-																						</li>
-																					</ul>
-																				</div>
-																			</div>
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</div>
-													</li>
-													<li class="item-vertical">
-														<p class="close-menu"></p>
-														<a href="#" class="clearfix">
-															<img src="/front/image/catalog/menu/icons/ico1.png"
-																alt="icon">
-															<span>CATEGORY</span>
-
-														</a>
-													</li>
-													<li class="item-vertical  style1 with-sub-menu hover">
-														<p class="close-menu"></p>
-														<a href="#" class="clearfix">
-															<span class="label"></span>
-															<img src="/front/image/catalog/menu/icons/ico9.png"
-																alt="icon">
-															<span>CATEGORY</span>
-
-															<b class="fa-angle-right"></b>
-														</a>
-														<div class="sub-menu" data-subwidth="40">
-															<div class="content">
-																<div class="row">
-																	<div class="col-md-6">
-																		<div class="row">
-																			<div class="col-md-12 static-menu">
-																				<div class="menu">
-																					<ul>
-																						<li><a href="#"
-																								class="main-menu">CATEGORY</a>
-																							<ul>
-																								<li><a
-																										href="#">CATEGORY</a>
-																								</li>
-																								<li><a
-																										href="#">CATEGORY</a>
-																								</li>
-																								<li><a
-																										href="#">CATEGORY</a>
-																								</li>
-																								<li><a
-																										href="#">CATEGORY</a>
-																								</li>
-																								<li><a
-																										href="#">CATEGORY</a>
-																								</li>
-																							</ul>
-																						</li>
-																						<li><a href="#"
-																								class="main-menu">CATEGORY</a>
-																							<ul>
-																								<li><a
-																										href="#">CATEGORY</a>
-																								</li>
-																								<li><a
-																										href="#">CATEGORY</a>
-																								</li>
-																								<li><a
-																										href="#">CATEGORY</a>
-																								</li>
-																								<li><a
-																										href="#">CATEGORY</a>
-																								</li>
-																								<li><a
-																										href="#">CATEGORY</a>
-																								</li>
-																							</ul>
-																						</li>
-																					</ul>
-																				</div>
-																			</div>
-																		</div>
-																	</div>
-																	<div class="col-md-6">
-																		<div class="row banner">
-																			<a href="#">
-																				<img src="/front/image/catalog/menu/megabanner/vbanner1.jpg"
-																					alt="banner1">
-																			</a>
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</div>
-													</li>
-													<li class="item-vertical with-sub-menu hover">
-														<p class="close-menu"></p>
-														<a href="#" class="clearfix">
-															<img src="/front/image/catalog/menu/icons/ico7.png"
-																alt="icon">
-															<span>CATEGORY</span>
-															<b class="fa-angle-right"></b>
-														</a>
-														<div class="sub-menu" data-subwidth="60">
+														<div class="sub-menu" data-subwidth="30">
 															<div class="content">
 																<div class="row">
 																	<div class="col-md-12">
@@ -709,51 +500,41 @@ xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
 															</div>
 														</div>
 													</li>
+													<li class="item-vertical">
+														<p class="close-menu"></p>
+														<a href="#" class="clearfix">
+															<img src="/front/image/catalog/menu/icons/ico1.png"
+																alt="icon">
+															<span>CATEGORY</span>
+
+														</a>
+													</li>
+													<li class="item-vertical  style1 with-sub-menu hover">
+														<p class="close-menu"></p>
+														<a href="#" class="clearfix">
+															<span class="label"></span>
+															<img src="/front/image/catalog/menu/icons/ico9.png"
+																alt="icon">
+															<span>CATEGORY</span>
+														</a>
+
+													</li>
+													<li class="item-vertical with-sub-menu hover">
+														<p class="close-menu"></p>
+														<a href="#" class="clearfix">
+															<img src="/front/image/catalog/menu/icons/ico7.png"
+																alt="icon">
+															<span>CATEGORY</span>
+														</a>
+
+													</li>
 													<li class="item-vertical css-menu with-sub-menu hover">
 														<p class="close-menu"></p>
 														<a href="#" class="clearfix">
-
 															<img src="/front/image/catalog/menu/icons/ico6.png"
 																alt="icon">
 															<span>Category</span>
-															<b class="fa-angle-right"></b>
 														</a>
-														<div class="sub-menu" data-subwidth="20">
-															<div class="content">
-																<div class="row">
-																	<div class="col-sm-12">
-																		<div class="row">
-																			<div class="col-sm-12 hover-menu">
-																				<div class="menu">
-																					<ul>
-																						<li>
-																							<a href="#"
-																								class="main-menu">Category</a>
-																						</li>
-																						<li>
-																							<a href="#"
-																								class="main-menu">Category</a>
-																						</li>
-																						<li>
-																							<a href="#"
-																								class="main-menu">Category</a>
-																						</li>
-																						<li>
-																							<a href="#"
-																								class="main-menu">Category</a>
-																						</li>
-																						<li>
-																							<a href="#"
-																								class="main-menu">Category</a>
-																						</li>
-																					</ul>
-																				</div>
-																			</div>
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</div>
 													</li>
 													<li class="item-vertical">
 														<p class="close-menu"></p>
@@ -761,7 +542,6 @@ xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
 															<img src="/front/image/catalog/menu/icons/ico5.png"
 																alt="icon">
 															<span>Category</span>
-
 														</a>
 													</li>
 													<li class="item-vertical">
@@ -865,10 +645,10 @@ xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
 									<div class="megamenu-pattern">
 										<div class="container-mega">
 											<ul class="megamenu" data-transition="slide" data-animationtime="250">
-												<li class="home hover">
+												<li class="home">
 													<a href="#">Home</a>
 												</li>
-												<li class="home hover">
+												<li class="">
 													<a href="/about">IBIO SCIENCE</a>
 												</li>
 												<li class="with-sub-menu hover">
@@ -880,128 +660,38 @@ xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
 															alt="icon items">
 														<b class="caret"></b>
 													</a>
-													<div class="sub-menu" style="width: 100%; display: none;">
+													<div class="sub-menu" style="width: 70%; display: none;">
 														<div class="content">
 															<div class="row">
-																<div class="col-sm-12">
-																	<div class="row">
-																		<div class="col-md-3 img img1">
-																			<a href="#"><img
-																					src="/front/image/catalog/menu/megabanner/image-1.jpg"
-																					alt="banner1"></a>
-																		</div>
-																		<div class="col-md-3 img img2">
-																			<a href="#"><img
-																					src="/front/image/catalog/menu/megabanner/image-2.jpg"
-																					alt="banner2"></a>
-																		</div>
-																		<div class="col-md-3 img img3">
-																			<a href="#"><img
-																					src="/front/image/catalog/menu/megabanner/image-3.jpg"
-																					alt="banner3"></a>
-																		</div>
-																		<div class="col-md-3 img img4">
-																			<a href="#"><img
-																					src="/front/image/catalog/menu/megabanner/image-4.jpg"
-																					alt="banner4"></a>
-																		</div>
-																	</div>
-																</div>
-															</div>
-															<div class="row">
-																<div class="col-md-3">
-																	<a href="#" class="title-submenu">Automotive</a>
-																	<div class="row">
-																		<div class="col-md-12 hover-menu">
-																			<div class="menu">
-																				<ul>
-																					<li><a href="#"
-																							class="main-menu">Car
-																							Alarms and
-																							Security</a></li>
-																					<li><a href="#"
-																							class="main-menu">Car
-																							Audio &amp;
-																							Speakers</a></li>
-																					<li><a href="#"
-																							class="main-menu">Gadgets
-																							&amp; Auto Parts</a>
-																					</li>
-																					<li><a href="#"
-																							class="main-menu">More
-																							Car Accessories</a>
-																					</li>
-																				</ul>
+																<div class="col-md-4">
+																	<a href="/productList" class="title-submenu text-center">IBIO Product list
+																		<div class="row">
+																			<div class="col-md-12 hover-menu">
+																				<img src="/front/image/catalog/menu/megabanner/image-1.jpg"
+																					alt="banner1">
 																			</div>
 																		</div>
-																	</div>
+																	</a>
 																</div>
-																<div class="col-md-3">
-																	<a href="#" class="title-submenu">Funitures</a>
-																	<div class="row">
-																		<div class="col-md-12 hover-menu">
-																			<div class="menu">
-																				<ul>
-																					<li><a href="#"
-																							class="main-menu">Bathroom</a>
-																					</li>
-																					<li><a href="#"
-																							class="main-menu">Bedroom</a>
-																					</li>
-																					<li><a href="#"
-																							class="main-menu">Decor</a>
-																					</li>
-																					<li><a href="#"
-																							class="main-menu">Living
-																							room</a></li>
-																				</ul>
+																<div class="col-md-4">
+																	<a href="/productList" class="title-submenu text-center">BRAND Product list
+																		<div class="row">
+																			<div class="col-md-12 hover-menu">
+																				<img src="/front/image/catalog/menu/megabanner/image-1.jpg"
+																					alt="banner1">
 																			</div>
 																		</div>
-																	</div>
+																	</a>
 																</div>
-																<div class="col-md-3">
-																	<a href="#" class="title-submenu">Jewelry
-																		&amp; Watches</a>
-																	<div class="row">
-																		<div class="col-md-12 hover-menu">
-																			<div class="menu">
-																				<ul>
-																					<li><a href="#"
-																							class="main-menu">Earings</a>
-																					</li>
-																					<li><a href="#"
-																							class="main-menu">Wedding
-																							Rings</a></li>
-																					<li><a href="#"
-																							class="main-menu">Men
-																							Watches</a></li>
-																				</ul>
+																<div class="col-md-4">
+																	<a href="/productList" class="title-submenu text-center">EVENT Product list
+																		<div class="row">
+																			<div class="col-md-12 hover-menu">
+																				<img src="/front/image/catalog/menu/megabanner/image-1.jpg"
+																					alt="banner1">
 																			</div>
 																		</div>
-																	</div>
-																</div>
-																<div class="col-md-3">
-																	<a href="#" class="title-submenu">Electronics</a>
-																	<div class="row">
-																		<div class="col-md-12 hover-menu">
-																			<div class="menu">
-																				<ul>
-																					<li><a href="#"
-																							class="main-menu">Computer</a>
-																					</li>
-																					<li><a href="#"
-																							class="main-menu">Smartphone</a>
-																					</li>
-																					<li><a href="#"
-																							class="main-menu">Tablets</a>
-																					</li>
-																					<li><a href="#"
-																							class="main-menu">Monitors</a>
-																					</li>
-																				</ul>
-																			</div>
-																		</div>
-																	</div>
+																	</a>
 																</div>
 															</div>
 														</div>
@@ -1097,11 +787,11 @@ xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
 		<div class="container">
 			<div class="row">
 				<div class="header-top-left col-lg-8 col-md-8 col-sm-6 col-xs-3">
-					<div class="hidden-md hidden-sm hidden-xs welcome-msg">WELCOME TO IBIO DEAER SHOP</div>
+					<div class="hidden-md hidden-sm hidden-xs welcome-msg">WELCOME TO IBIO DEALER SHOP</div>
 					<div class="telephone hidden-xs hidden-sm hidden-md">
 						<ul>
-							<li><i class="fa fa-envelope"></i>Email: Design@domain.com</li>
-							<li><i class="fa fa-phone"></i>Hotline: (888) 4344 6000 - (888) 1338 8193</li>
+							<li><i class="fa fa-envelope"></i>이메일: contact@domain.com</li>
+							<li><i class="fa fa-phone"></i>고객센터 (888) 4344 6000 - (888) 1338 8193</li>
 						</ul>
 					</div>
 				</div>
@@ -1130,7 +820,13 @@ xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
 													title="Arabic" /> 배송 조회 </a> </li>
 										<li> <a href="/member/couponInsert"> <img class="image_flag"
 													src="/front/image/catalog/flags/ar.png" alt="Arabic"
-													title="Arabic" /> 쿠폰관리 </a> </li>				
+													title="Arabic" /> 쿠폰관리 </a> </li>
+										<li> <a href="/dealer"> <img class="image_flag"
+													src="/front/image/catalog/flags/ar.png" alt="Arabic"
+													title="Arabic" /> 제품 관리자 </a> </li>				
+										<li> <a href="/admin"> <img class="image_flag"
+													src="/front/image/catalog/flags/ar.png" alt="Arabic"
+													title="Arabic" /> 사이트 관리자 </a> </li>				
 									</ul>
 								</div>
 							</li>
@@ -1140,19 +836,15 @@ xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
 			</div>
 		</div>
 	</div>
-	<!-- //Header Top -->
 
-	<!-- Header center -->
 	<div class="header-middle">
 		<div class="container">
 			<div class="row">
-				<!-- Logo -->
 				<div class="navbar-logo col-lg-3 col-md-3 col-sm-12 col-xs-12">
 					<div class="logo"><a href="/dealerShop"><img src="/front/image/catalog/logo.png" title="IBIO"
 								alt="IBIO" /></a></div>
 				</div>
-				<!-- //end Logo -->
-				<!-- Search -->
+
 				<div class="middle2 col-lg-6 col-md-7 col-sm-6 col-xs-6">
 					<div class="search-header-w">
 						<div class="icon-search hidden-lg hidden-md"><i class="fa fa-search"></i></div>
@@ -1307,22 +999,17 @@ xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
 						<li>MY ACCOUNT</li>
 						<li class="logout"><a href="/loginForm">SIGN IN</a> / <a href="/signupForm">SIGN UP</a>
 						</li>
-
 					</ul>
 				</div>
 			</div>
-
 		</div>
 	</div>
-	<!-- //Header center -->
 
-	<!-- Header Bottom -->
 	<div class="header-bottom hidden-compact">
 		<div class="container">
 			<div class="row">
 
 				<div class="bottom1 menu-vertical col-lg-2 col-md-3">
-					<!-- Secondary menu -->
 					<div class="responsive so-megamenu megamenu-style-dev">
 						<div class="so-vertical-menu ">
 							<nav class="navbar-default">
@@ -1342,6 +1029,7 @@ xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
 											</div>
 										</div>
 									</div>
+
 									<div class="navbar-header">
 										<button type="button" id="show-verticalmenu" data-toggle="collapse"
 											class="navbar-toggle">
@@ -1359,66 +1047,54 @@ xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
 														<a href="#" class="clearfix">
 															<img src="/front/image/catalog/menu/icons/ico10.png"
 																alt="icon">
-															<span>Gifts & Toys</span>
+															<span>CATEGORY</span>
 															<b class="fa-angle-right"></b>
 														</a>
-														<div class="sub-menu" data-subwidth="60">
+														<div class="sub-menu" data-subwidth="30">
 															<div class="content">
 																<div class="row">
-																	<div class="col-sm-12">
+																	<div class="col-md-12">
 																		<div class="row">
 																			<div class="col-md-4 static-menu">
 																				<div class="menu">
 																					<ul>
-																						<li>
-																							<a href="#"
-																								class="main-menu">Apparel</a>
+																						<li><a href="#"
+																								class="main-menu">CATEGORY</a>
 																							<ul>
-																								<li><a href="#">Accessories
-																										for
-																										Tablet
-																										PC</a>
+																								<li><a
+																										href="#">CATEGORY</a>
 																								</li>
-																								<li><a href="#">Accessories
-																										for i
-																										Pad</a>
+																								<li><a
+																										href="#">CATEGORY</a>
 																								</li>
-																								<li><a href="#">Accessories
-																										for
-																										iPhone</a>
+																								<li><a
+																										href="#">CATEGORY</a>
 																								</li>
-																								<li><a href="#">Bags,
-																										Holiday
-																										Supplies</a>
+																								<li><a
+																										href="#">CATEGORY</a>
 																								</li>
-																								<li><a href="#">Car
-																										Alarms
-																										and
-																										Security</a>
-																								</li>
-																								<li><a href="#">Car
-																										Audio
-																										&amp;
-																										Speakers</a>
+																								<li><a
+																										href="#">CATEGORY</a>
 																								</li>
 																							</ul>
 																						</li>
-																						<li>
-																							<a href="#"
-																								class="main-menu">Cables
-																								&amp;
-																								Connectors</a>
+																						<li><a href="#"
+																								class="main-menu">CATEGORY</a>
 																							<ul>
-																								<li><a href="#">Cameras
-																										&amp;
-																										Photo</a>
+																								<li><a
+																										href="#">CATEGORY</a>
 																								</li>
 																								<li><a
-																										href="#">Electronics</a>
+																										href="#">CATEGORY</a>
 																								</li>
-																								<li><a href="#">Outdoor
-																										&amp;
-																										Traveling</a>
+																								<li><a
+																										href="#">CATEGORY</a>
+																								</li>
+																								<li><a
+																										href="#">CATEGORY</a>
+																								</li>
+																								<li><a
+																										href="#">CATEGORY</a>
 																								</li>
 																							</ul>
 																						</li>
@@ -1428,44 +1104,43 @@ xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
 																			<div class="col-md-4 static-menu">
 																				<div class="menu">
 																					<ul>
-																						<li>
-																							<a href="#"
-																								class="main-menu">Camping
-																								&amp; Hiking</a>
+																						<li><a href="#"
+																								class="main-menu">CATEGORY</a>
 																							<ul>
 																								<li><a
-																										href="#">Earings</a>
+																										href="#">CATEGORY</a>
 																								</li>
-																								<li><a href="#">Shaving
-																										&amp;
-																										Hair
-																										Removal</a>
+																								<li><a
+																										href="#">CATEGORY</a>
 																								</li>
-																								<li><a href="#">Salon
-																										&amp;
-																										Spa
-																										Equipment</a>
+																								<li><a
+																										href="#">CATEGORY</a>
+																								</li>
+																								<li><a
+																										href="#">CATEGORY</a>
+																								</li>
+																								<li><a
+																										href="#">CATEGORY</a>
 																								</li>
 																							</ul>
 																						</li>
-																						<li>
-																							<a href="#"
-																								class="main-menu">Smartphone
-																								&amp;
-																								Tablets</a>
+																						<li><a href="#"
+																								class="main-menu">CATEGORY</a>
 																							<ul>
-																								<li><a href="#">Sports
-																										&amp;
-																										Outdoors</a>
+																								<li><a
+																										href="#">CATEGORY</a>
 																								</li>
-																								<li><a href="#">Bath
-																										&amp;
-																										Body</a>
+																								<li><a
+																										href="#">CATEGORY</a>
 																								</li>
-																								<li><a href="#">Gadgets
-																										&amp;
-																										Auto
-																										Parts</a>
+																								<li><a
+																										href="#">CATEGORY</a>
+																								</li>
+																								<li><a
+																										href="#">CATEGORY</a>
+																								</li>
+																								<li><a
+																										href="#">CATEGORY</a>
 																								</li>
 																							</ul>
 																						</li>
@@ -1475,29 +1150,43 @@ xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
 																			<div class="col-md-4 static-menu">
 																				<div class="menu">
 																					<ul>
-																						<li>
-																							<a href="#"
-																								class="main-menu">Bags,
-																								Holiday
-																								Supplies</a>
+																						<li><a href="#"
+																								class="main-menu">CATEGORY</a>
 																							<ul>
-																								<li><a href="#"
-																										onclick="window.location = '18_46';">Battereries
-																										&amp;
-																										Chargers</a>
+																								<li><a
+																										href="#">CATEGORY</a>
 																								</li>
-																								<li><a href="#"
-																										onclick="window.location = '24_64';">Bath
-																										&amp;
-																										Body</a>
+																								<li><a
+																										href="#">CATEGORY</a>
 																								</li>
-																								<li><a href="#"
-																										onclick="window.location = '18_45';">Headphones,
-																										Headsets</a>
+																								<li><a
+																										href="#">CATEGORY</a>
 																								</li>
-																								<li><a href="#"
-																										onclick="window.location = '18_30';">Home
-																										Audio</a>
+																								<li><a
+																										href="#">CATEGORY</a>
+																								</li>
+																								<li><a
+																										href="#">CATEGORY</a>
+																								</li>
+																							</ul>
+																						</li>
+																						<li><a href="#"
+																								class="main-menu">CATEGORY</a>
+																							<ul>
+																								<li><a
+																										href="#">CATEGORY</a>
+																								</li>
+																								<li><a
+																										href="#">CATEGORY</a>
+																								</li>
+																								<li><a
+																										href="#">CATEGORY</a>
+																								</li>
+																								<li><a
+																										href="#">CATEGORY</a>
+																								</li>
+																								<li><a
+																										href="#">CATEGORY</a>
 																								</li>
 																							</ul>
 																						</li>
@@ -1515,7 +1204,7 @@ xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
 														<a href="#" class="clearfix">
 															<img src="/front/image/catalog/menu/icons/ico1.png"
 																alt="icon">
-															<span>Fashion & Accessories</span>
+															<span>CATEGORY</span>
 
 														</a>
 													</li>
@@ -1525,330 +1214,33 @@ xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
 															<span class="label"></span>
 															<img src="/front/image/catalog/menu/icons/ico9.png"
 																alt="icon">
-															<span>Electronic</span>
-
-															<b class="fa-angle-right"></b>
+															<span>CATEGORY</span>
 														</a>
-														<div class="sub-menu" data-subwidth="40">
-															<div class="content">
-																<div class="row">
-																	<div class="col-md-6">
-																		<div class="row">
-																			<div class="col-md-12 static-menu">
-																				<div class="menu">
-																					<ul>
-																						<li><a href="#"
-																								class="main-menu">Smartphone</a>
-																							<ul>
-																								<li><a
-																										href="#">Esdipiscing</a>
-																								</li>
-																								<li><a
-																										href="#">Scanners</a>
-																								</li>
-																								<li><a
-																										href="#">Apple</a>
-																								</li>
-																								<li><a href="#">Dell</a>
-																								</li>
-																								<li><a
-																										href="#">Scanners</a>
-																								</li>
-																							</ul>
-																						</li>
-																						<li><a href="#"
-																								class="main-menu">Electronics</a>
-																							<ul>
-																								<li><a
-																										href="#">Asdipiscing</a>
-																								</li>
-																								<li><a href="#">Diam
-																										sit</a>
-																								</li>
-																								<li><a href="#">Labore
-																										et</a>
-																								</li>
-																								<li><a
-																										href="#">Monitors</a>
-																								</li>
-																							</ul>
-																						</li>
-																					</ul>
-																				</div>
-																			</div>
-																		</div>
-																	</div>
-																	<div class="col-md-6">
-																		<div class="row banner">
-																			<a href="#">
-																				<img src="/front/image/catalog/menu/megabanner/vbanner1.jpg"
-																					alt="banner1">
-																			</a>
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</div>
+
 													</li>
 													<li class="item-vertical with-sub-menu hover">
 														<p class="close-menu"></p>
 														<a href="#" class="clearfix">
 															<img src="/front/image/catalog/menu/icons/ico7.png"
 																alt="icon">
-															<span>Health &amp; Beauty</span>
-															<b class="fa-angle-right"></b>
+															<span>CATEGORY</span>
 														</a>
-														<div class="sub-menu" data-subwidth="60">
-															<div class="content">
-																<div class="row">
-																	<div class="col-md-12">
-																		<div class="row">
-																			<div class="col-md-4 static-menu">
-																				<div class="menu">
-																					<ul>
-																						<li>
-																							<a href="#"
-																								class="main-menu">Car
-																								Alarms and
-																								Security</a>
-																							<ul>
-																								<li><a href="#">Car
-																										Audio
-																										&amp;
-																										Speakers</a>
-																								</li>
-																								<li><a href="#">Gadgets
-																										&amp;
-																										Auto
-																										Parts</a>
-																								</li>
-																								<li><a href="#">Gadgets
-																										&amp;
-																										Auto
-																										Parts</a>
-																								</li>
-																								<li><a href="#">Headphones,
-																										Headsets</a>
-																								</li>
-																							</ul>
-																						</li>
-																						<li>
-																							<a href="24"
-																								onclick="window.location = '24';"
-																								class="main-menu">Health
-																								&amp; Beauty</a>
-																							<ul>
-																								<li>
-																									<a href="#">Home
-																										Audio</a>
-																								</li>
-																								<li>
-																									<a href="#">Helicopters
-																										&amp;
-																										Parts</a>
-																								</li>
-																								<li>
-																									<a href="#">Outdoor
-																										&amp;
-																										Traveling</a>
-																								</li>
-																								<li>
-																									<a href="#">Toys
-																										&amp;
-																										Hobbies</a>
-																								</li>
-																							</ul>
-																						</li>
-																					</ul>
-																				</div>
-																			</div>
-																			<div class="col-md-4 static-menu">
-																				<div class="menu">
-																					<ul>
-																						<li>
-																							<a href="#"
-																								class="main-menu">Electronics</a>
-																							<ul>
-																								<li>
-																									<a
-																										href="#">Earings</a>
-																								</li>
-																								<li>
-																									<a href="#">Salon
-																										&amp;
-																										Spa
-																										Equipment</a>
-																								</li>
-																								<li>
-																									<a href="#">Shaving
-																										&amp;
-																										Hair
-																										Removal</a>
-																								</li>
-																								<li>
-																									<a href="#">Smartphone
-																										&amp;
-																										Tablets</a>
-																								</li>
-																							</ul>
-																						</li>
-																						<li>
-																							<a href="#"
-																								class="main-menu">Sports
-																								&amp;
-																								Outdoors</a>
-																							<ul>
-																								<li>
-																									<a href="#">Flashlights
-																										&amp;
-																										Lamps</a>
-																								</li>
-																								<li>
-																									<a
-																										href="#">Fragrances</a>
-																								</li>
-																								<li>
-																									<a
-																										href="#">Fishing</a>
-																								</li>
-																								<li>
-																									<a href="#">FPV
-																										System
-																										&amp;
-																										Parts</a>
-																								</li>
-																							</ul>
-																						</li>
-																					</ul>
-																				</div>
-																			</div>
-																			<div class="col-md-4 static-menu">
-																				<div class="menu">
-																					<ul>
-																						<li>
-																							<a href="#"
-																								class="main-menu">More
-																								Car
-																								Accessories</a>
-																							<ul>
-																								<li>
-																									<a href="#">Lighter
-																										&amp;
-																										Cigar
-																										Supplies</a>
-																								</li>
-																								<li>
-																									<a href="#">Mp3
-																										Players
-																										&amp;
-																										Accessories</a>
-																								</li>
-																								<li>
-																									<a href="#">Men
-																										Watches</a>
-																								</li>
-																								<li>
-																									<a href="#">Mobile
-																										Accessories</a>
-																								</li>
-																							</ul>
-																						</li>
-																						<li>
-																							<a href="#"
-																								class="main-menu">Gadgets
-																								&amp; Auto
-																								Parts</a>
-																							<ul>
-																								<li>
-																									<a href="#">Gift
-																										&amp;
-																										Lifestyle
-																										Gadgets</a>
-																								</li>
-																								<li>
-																									<a href="#">Gift
-																										for
-																										Man</a>
-																								</li>
-																								<li>
-																									<a href="#">Gift
-																										for
-																										Woman</a>
-																								</li>
-																								<li>
-																									<a href="#">Gift
-																										for
-																										Woman</a>
-																								</li>
-																							</ul>
-																						</li>
-																					</ul>
-																				</div>
-																			</div>
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</div>
+
 													</li>
 													<li class="item-vertical css-menu with-sub-menu hover">
 														<p class="close-menu"></p>
 														<a href="#" class="clearfix">
-
 															<img src="/front/image/catalog/menu/icons/ico6.png"
 																alt="icon">
-															<span>Smartphone &amp; Tablets</span>
-															<b class="fa-angle-right"></b>
+															<span>Category</span>
 														</a>
-														<div class="sub-menu" data-subwidth="20">
-															<div class="content">
-																<div class="row">
-																	<div class="col-sm-12">
-																		<div class="row">
-																			<div class="col-sm-12 hover-menu">
-																				<div class="menu">
-																					<ul>
-																						<li>
-																							<a href="#"
-																								class="main-menu">Headphones,
-																								Headsets</a>
-																						</li>
-																						<li>
-																							<a href="#"
-																								class="main-menu">Home
-																								Audio</a>
-																						</li>
-																						<li>
-																							<a href="#"
-																								class="main-menu">Health
-																								&amp; Beauty</a>
-																						</li>
-																						<li>
-																							<a href="#"
-																								class="main-menu">Helicopters
-																								&amp; Parts</a>
-																						</li>
-																						<li>
-																							<a href="#"
-																								class="main-menu">Helicopters
-																								&amp; Parts</a>
-																						</li>
-																					</ul>
-																				</div>
-																			</div>
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</div>
 													</li>
 													<li class="item-vertical">
 														<p class="close-menu"></p>
 														<a href="#" class="clearfix">
 															<img src="/front/image/catalog/menu/icons/ico5.png"
 																alt="icon">
-															<span>Health & Beauty</span>
-
+															<span>Category</span>
 														</a>
 													</li>
 													<li class="item-vertical">
@@ -1856,7 +1248,7 @@ xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
 														<a href="#" class="clearfix">
 															<img src="/front/image/catalog/menu/icons/ico4.png"
 																alt="icon">
-															<span>Bathroom</span>
+															<span>Category</span>
 														</a>
 													</li>
 													<li class="item-vertical">
@@ -1864,7 +1256,7 @@ xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
 														<a href="#" class="clearfix">
 															<img src="/front/image/catalog/menu/icons/ico3.png"
 																alt="icon">
-															<span>Metallurgy</span>
+															<span>Category</span>
 														</a>
 													</li>
 													<li class="item-vertical">
@@ -1872,7 +1264,7 @@ xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
 														<a href="#" class="clearfix">
 															<img src="/front/image/catalog/menu/icons/ico2.png"
 																alt="icon">
-															<span>Bedroom</span>
+															<span>Category</span>
 														</a>
 													</li>
 													<li class="item-vertical">
@@ -1881,7 +1273,7 @@ xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
 														<a href="#" class="clearfix">
 															<img src="/front/image/catalog/menu/icons/ico1.png"
 																alt="icon">
-															<span>Health &amp; Beauty</span>
+															<span>Category</span>
 														</a>
 													</li>
 													<li class="item-vertical" style="display: none;">
@@ -1889,7 +1281,7 @@ xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
 														<a href="#" class="clearfix">
 															<img src="/front/image/catalog/menu/icons/ico11.png"
 																alt="icon">
-															<span>Toys &amp; Hobbies </span>
+															<span>Category</span>
 														</a>
 													</li>
 													<li class="item-vertical" style="display: none;">
@@ -1897,7 +1289,7 @@ xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
 														<a href="#" class="clearfix">
 															<img src="/front/image/catalog/menu/icons/ico12.png"
 																alt="icon">
-															<span>Jewelry &amp; Watches</span>
+															<span>Category</span>
 														</a>
 													</li>
 													<li class="item-vertical" style="display: none;">
@@ -1905,7 +1297,7 @@ xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
 														<a href="#" class="clearfix">
 															<img src="/front/image/catalog/menu/icons/ico9.png"
 																alt="icon">
-															<span>Home &amp; Lights</span>
+															<span>Category</span>
 														</a>
 													</li>
 													<li class="item-vertical" style="display: none;">
@@ -1913,13 +1305,13 @@ xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
 														<a href="#" class="clearfix">
 															<img src="/front/image/catalog/menu/icons/ico6.png"
 																alt="icon">
-															<span>Metallurgy</span>
+															<span>Category</span>
 														</a>
 													</li>
 
 													<li class="loadmore">
 														<i class="fa fa-plus-square-o"></i>
-														<span class="more-view">More Categories</span>
+														<span class="more-view">More Category</span>
 													</li>
 
 												</ul>
@@ -1951,7 +1343,7 @@ xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
 									<div class="megamenu-pattern">
 										<div class="container-mega">
 											<ul class="megamenu" data-transition="slide" data-animationtime="250">
-												<li class="">
+												<li class="home">
 													<a href="/">IBIO SHOP</a>
 												</li>
 												<li class="">
@@ -1960,138 +1352,11 @@ xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
 												<li class="with-sub-menu hover">
 													<p class="close-menu"></p>
 													<a href="#" class="clearfix">
-														<strong>PRODUCTs</strong>
+														<strong>PRODUCT LIST</strong>
 														<img class="label-hot"
 															src="/front/image/catalog/menu/hot-icon.png"
 															alt="icon items">
-														<b class="caret"></b>
 													</a>
-													<div class="sub-menu" style="width: 100%; display: none;">
-														<div class="content">
-															<div class="row">
-																<div class="col-sm-12">
-																	<div class="row">
-																		<div class="col-md-3 img img1">
-																			<a href="#"><img
-																					src="/front/image/catalog/menu/megabanner/image-1.jpg"
-																					alt="banner1"></a>
-																		</div>
-																		<div class="col-md-3 img img2">
-																			<a href="#"><img
-																					src="/front/image/catalog/menu/megabanner/image-2.jpg"
-																					alt="banner2"></a>
-																		</div>
-																		<div class="col-md-3 img img3">
-																			<a href="#"><img
-																					src="/front/image/catalog/menu/megabanner/image-3.jpg"
-																					alt="banner3"></a>
-																		</div>
-																		<div class="col-md-3 img img4">
-																			<a href="#"><img
-																					src="/front/image/catalog/menu/megabanner/image-4.jpg"
-																					alt="banner4"></a>
-																		</div>
-																	</div>
-																</div>
-															</div>
-															<div class="row">
-																<div class="col-md-3">
-																	<a href="#" class="title-submenu">Automotive</a>
-																	<div class="row">
-																		<div class="col-md-12 hover-menu">
-																			<div class="menu">
-																				<ul>
-																					<li><a href="#"
-																							class="main-menu">Car
-																							Alarms and
-																							Security</a></li>
-																					<li><a href="#"
-																							class="main-menu">Car
-																							Audio &amp;
-																							Speakers</a></li>
-																					<li><a href="#"
-																							class="main-menu">Gadgets
-																							&amp; Auto Parts</a>
-																					</li>
-																					<li><a href="#"
-																							class="main-menu">More
-																							Car Accessories</a>
-																					</li>
-																				</ul>
-																			</div>
-																		</div>
-																	</div>
-																</div>
-																<div class="col-md-3">
-																	<a href="#" class="title-submenu">Funitures</a>
-																	<div class="row">
-																		<div class="col-md-12 hover-menu">
-																			<div class="menu">
-																				<ul>
-																					<li><a href="#"
-																							class="main-menu">Bathroom</a>
-																					</li>
-																					<li><a href="#"
-																							class="main-menu">Bedroom</a>
-																					</li>
-																					<li><a href="#"
-																							class="main-menu">Decor</a>
-																					</li>
-																					<li><a href="#"
-																							class="main-menu">Living
-																							room</a></li>
-																				</ul>
-																			</div>
-																		</div>
-																	</div>
-																</div>
-																<div class="col-md-3">
-																	<a href="#" class="title-submenu">Jewelry
-																		&amp; Watches</a>
-																	<div class="row">
-																		<div class="col-md-12 hover-menu">
-																			<div class="menu">
-																				<ul>
-																					<li><a href="#"
-																							class="main-menu">Earings</a>
-																					</li>
-																					<li><a href="#"
-																							class="main-menu">Wedding
-																							Rings</a></li>
-																					<li><a href="#"
-																							class="main-menu">Men
-																							Watches</a></li>
-																				</ul>
-																			</div>
-																		</div>
-																	</div>
-																</div>
-																<div class="col-md-3">
-																	<a href="#" class="title-submenu">Electronics</a>
-																	<div class="row">
-																		<div class="col-md-12 hover-menu">
-																			<div class="menu">
-																				<ul>
-																					<li><a href="#"
-																							class="main-menu">Computer</a>
-																					</li>
-																					<li><a href="#"
-																							class="main-menu">Smartphone</a>
-																					</li>
-																					<li><a href="#"
-																							class="main-menu">Tablets</a>
-																					</li>
-																					<li><a href="#"
-																							class="main-menu">Monitors</a>
-																					</li>
-																				</ul>
-																			</div>
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</div>
-													</div>
 												</li>
 												<li class="with-sub-menu hover">
 													<p class="close-menu"></p>
@@ -2144,12 +1409,14 @@ xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
 
 												<li class="pull-right">
 													<p class='close-menu'></p>
-													<a class="clearfix" href="/contact"><i class="fa fa-phone-square"></i>고객센터 (02)1122-3344</a>	
+													<a class="clearfix" href="/contact"><i
+															class="fa fa-phone-square"></i>고객센터 (02)1122-3344</a>
 												</li>
 
 												<li class="pull-right">
 													<p class='close-menu'></p>
-													<a class="clearfix" href="/member/myDelivery"><i class="fa fa-truck"></i>배송조회</a>
+													<a class="clearfix" href="/member/myDelivery"><i
+															class="fa fa-truck"></i>배송조회</a>
 												</li>
 											</ul>
 										</div>
@@ -2164,7 +1431,7 @@ xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
 	</div>
 </header>
 
-<footer class="footer-container typefooter-1" th:fragment="footer">
+<footer class="footer-container typefooter-1" th:fragment="ibioFooter">
 	<div class="container">
 		<div class="row footer-top">
 			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">

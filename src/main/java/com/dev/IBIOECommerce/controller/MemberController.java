@@ -58,12 +58,6 @@ public class MemberController {
 		return "front/member/wishList";
 	}
 	
-	@GetMapping("/productCompare")
-	public String productCompare() {
-		
-		return "front/member/productCompare";
-	}
-	
 	@GetMapping("/deliveryDetail")
 	public String deliveryDetail() {
 		
