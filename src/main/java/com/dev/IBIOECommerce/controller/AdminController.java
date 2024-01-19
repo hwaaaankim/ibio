@@ -11,6 +11,6 @@ public class AdminController {
 	@GetMapping({"" , "/"})
 	public String adminIndex() {
 		
-		return "administration/ibio/index";
+		return "administration/common/index";
 	} 
 }
