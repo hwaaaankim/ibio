@@ -21,7 +21,7 @@ logging:
     file: "%d %-5level [%thread] %logger : %msg%n"
   level:
     org.springframework.web: ERROR
-    com.dev.BionLifeScienceWar: DEBUG
+    com.dev.IBIOECommerce: DEBUG
     org.hibernate: ERROR
 spring:
   config:
