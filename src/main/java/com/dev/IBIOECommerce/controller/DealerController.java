@@ -18,19 +18,19 @@ public class DealerController {
 	@GetMapping("/memberInquiryManager")
 	public String memberInquiryManager() {
 		
-		return "administration/dealer/memberInquiryManager";
+		return "administration/dealer/member/select/memberInquiryManager";
 	}
 	
 	@GetMapping("/refundManager")
 	public String refundManager() {
 		
-		return "administration/dealer/refundManager";
+		return "administration/dealer/member/select/refundManager";
 	}
 	
 	@GetMapping("/couponManager")
 	public String couponManager() {
 		
-		return "administration/dealer/couponManager";
+		return "administration/dealer/member/select/couponManager";
 	}
 	
 	@GetMapping("/dealerProductManager")
