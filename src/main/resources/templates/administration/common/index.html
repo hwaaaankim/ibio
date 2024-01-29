@@ -1,15 +1,10 @@
 <!doctype html>
-<html lang="ko" 
-data-layout="twocolumn" 
-data-sidebar="light" 
-data-sidebar-size="lg" 
-data-sidebar-image="none"
-data-preloader="disable"
-xmlns:th="http://www.thymeleaf.org" 
-xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<html lang="ko" data-layout="twocolumn" data-sidebar="light" data-sidebar-size="lg" data-sidebar-image="none"
+	data-preloader="disable" xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 
 <head th:replace="fragments/administration/common :: headSrc">
-	
+
 </head>
 
 <body>
@@ -17,15 +12,16 @@ xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 	<div id="layout-wrapper">
 
 		<header id="page-topbar" th:replace="fragments/administration/common :: headerMenu">
-			
+
 		</header>
 
-		<div id="removeNotificationModal" class="modal fade zoomIn" tabindex="-1" aria-hidden="true"  th:replace="fragments/administration/common :: removeModal">
+		<div id="removeNotificationModal" class="modal fade zoomIn" tabindex="-1" aria-hidden="true"
+			th:replace="fragments/administration/common :: removeModal">
 		</div>
-		
+
 		<div class="app-menu navbar-menu" th:replace="fragments/administration/common :: navMenu">
 		</div>
-		
+
 		<div class="vertical-overlay"></div>
 
 		<div class="main-content">
@@ -82,7 +78,8 @@ xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 											<div class="card-body">
 												<div class="d-flex align-items-center">
 													<div class="flex-grow-1 overflow-hidden">
-														<p class="text-uppercase fw-bold text-white-50 text-truncate mb-0">
+														<p
+															class="text-uppercase fw-bold text-white-50 text-truncate mb-0">
 															IBIO 총매출</p>
 													</div>
 												</div>
@@ -91,7 +88,9 @@ xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 														<h4 class="fs-22 fw-bold ff-secondary text-white mb-4">$<span
 																class="counter-value" data-target="559.25">0</span>k
 														</h4>
-														<a href="/admin/memberCalculationManager" class="text-decoration-underline text-white-50">일반 매출 관리하기</a>
+														<a href="/admin/memberCalculationManager"
+															class="text-decoration-underline text-white-50">일반 매출
+															관리하기</a>
 													</div>
 													<div class="avatar-sm flex-shrink-0">
 														<span class="avatar-title bg-white bg-opacity-10 rounded fs-3">
@@ -108,7 +107,8 @@ xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 											<div class="card-body">
 												<div class="d-flex align-items-center">
 													<div class="flex-grow-1 overflow-hidden">
-														<p class="text-uppercase fw-bold text-white-50 text-truncate mb-0">
+														<p
+															class="text-uppercase fw-bold text-white-50 text-truncate mb-0">
 															IBIO 총주문</p>
 													</div>
 												</div>
@@ -116,7 +116,9 @@ xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 													<div>
 														<h4 class="fs-22 fw-bold ff-secondary text-white mb-4"><span
 																class="counter-value" data-target="36894">0</span></h4>
-														<a href="/admin/memberSellingManager" class="text-decoration-underline text-white-50">일반주문 관리하기</a>
+														<a href="/admin/memberSellingManager"
+															class="text-decoration-underline text-white-50">일반주문
+															관리하기</a>
 													</div>
 													<div class="avatar-sm flex-shrink-0">
 														<span class="avatar-title bg-white bg-opacity-10 rounded fs-3">
@@ -143,7 +145,9 @@ xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 														<h4 class="fs-22 fw-bold ff-secondary text-white mb-4"><span
 																class="counter-value" data-target="183.35">0</span>M
 														</h4>
-														<a href="/admin/dealerCalculationManager" class="text-decoration-underline text-white-50">딜러매출 관리하기</a>
+														<a href="/admin/dealerCalculationManager"
+															class="text-decoration-underline text-white-50">딜러매출
+															관리하기</a>
 													</div>
 													<div class="avatar-sm flex-shrink-0">
 														<span class="avatar-title bg-white bg-opacity-10 rounded fs-3">
@@ -160,7 +164,8 @@ xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 											<div class="card-body">
 												<div class="d-flex align-items-center">
 													<div class="flex-grow-1 overflow-hidden">
-														<p class="text-uppercase fw-bold text-white-50 text-truncate mb-0">
+														<p
+															class="text-uppercase fw-bold text-white-50 text-truncate mb-0">
 															사이트 접속자</p>
 													</div>
 												</div>
@@ -170,7 +175,8 @@ xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 																class="counter-value" data-target="165.89">0</span>k
 														</h4>
 														<a href="/admin/accessManager"
-															class="text-decoration-underline text-white-50">사이트 접속자 관리하기</a>
+															class="text-decoration-underline text-white-50">사이트 접속자
+															관리하기</a>
 													</div>
 													<div class="avatar-sm flex-shrink-0">
 														<span class="avatar-title bg-white bg-opacity-10 rounded fs-3">
@@ -393,7 +399,9 @@ xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 													class="align-items-center mt-4 pt-2 justify-content-between row text-center text-sm-start">
 													<div class="col-sm">
 														<div class="text-muted">
-															<a href="/admin/ibioProductManager" class="text-decoration-underline text-black-50">제품 관리하기</a>
+															<a href="/admin/ibioProductManager"
+																class="text-decoration-underline text-black-50">제품
+																관리하기</a>
 														</div>
 													</div>
 												</div>
@@ -595,218 +603,94 @@ xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 													class="align-items-center mt-4 pt-2 justify-content-between row text-center text-sm-start">
 													<div class="col-sm">
 														<div class="text-muted">
-															<a href="/admin/ibioProductManager" class="text-decoration-underline text-black-50">딜러 매출 관리하기</a>
+															<a href="/admin/ibioProductManager"
+																class="text-decoration-underline text-black-50">딜러 매출
+																관리하기</a>
 														</div>
 													</div>
 												</div>
-											</div> 
-										</div> 
-									</div> 
-								</div> 
+											</div>
+										</div>
+									</div>
+								</div>
 
 								<div class="row">
-									<div class="col-xl-4">
+									<div class="col-xl-6">
 										<div class="card card-height-100">
 											<div class="card-header align-items-center d-flex">
-												<h4 class="card-title mb-0 flex-grow-1">사이트접속경로 분석</h4>
+												<h4 class="card-title mb-0 flex-grow-1">사이트 접속 기기 분석</h4>
 												<div class="flex-shrink-0">
 													<div class="dropdown card-header-dropdown">
 														<a class="text-reset dropdown-btn" href="#"
 															data-bs-toggle="dropdown" aria-haspopup="true"
 															aria-expanded="false">
-															<span class="text-muted">Report<i
-																	class="mdi mdi-chevron-down ms-1"></i></span>
+															<span class="text-muted fs-16"><i
+																	class="mdi mdi-dots-vertical align-middle"></i></span>
 														</a>
 														<div class="dropdown-menu dropdown-menu-end">
-															<a class="dropdown-item" href="#">Download Report</a>
+															<a class="dropdown-item" href="#">Today</a>
+															<a class="dropdown-item" href="#">Last Week</a>
+															<a class="dropdown-item" href="#">Last Month</a>
+															<a class="dropdown-item" href="#">Current Year</a>
 														</div>
 													</div>
 												</div>
 											</div>
-
 											<div class="card-body">
-												<div id="store-visits-source"
-													data-colors='["--vz-primary", "--vz-success", "--vz-warning", "--vz-danger", "--vz-info"]'
+												<div id="user_device_pie_charts"
+													data-colors='["--vz-primary", "--vz-warning", "--vz-info"]'
 													class="apex-charts" dir="ltr"></div>
-											</div>
-										</div>
-									</div> 
 
-									<div class="col-xl-8">
-										<div class="card">
-											<div class="card-header align-items-center d-flex">
-												<h4 class="card-title mb-0 flex-grow-1">최근 주문내역</h4>
-												<div class="flex-shrink-0">
-													<button type="button" class="btn btn-soft-info btn-sm">
-														<i class="ri-file-list-3-line align-middle"></i> Generate Report
-													</button>
-												</div>
-											</div>
-
-											<div class="card-body">
-												<div class="table-responsive table-card">
+												<div class="table-responsive mt-3">
 													<table
-														class="table table-borderless table-centered align-middle table-nowrap mb-0">
-														<thead class="text-muted table-light">
+														class="table table-borderless table-sm table-centered align-middle table-nowrap mb-0">
+														<tbody class="border-0">
 															<tr>
-																<th scope="col">Order ID</th>
-																<th scope="col">Customer</th>
-																<th scope="col">Product</th>
-																<th scope="col">Amount</th>
-																<th scope="col">Vendor</th>
-																<th scope="col">Status</th>
-																<th scope="col">Rating</th>
+																<td>
+																	<h4 class="text-truncate fs-14 mb-0"><i
+																			class="ri-stop-fill align-middle fs-18 text-primary me-2"></i>Desktop
+																		Users</h4>
+																</td>
+																<td>
+																	<p class="text-muted mb-0"><i data-feather="users"
+																			class="me-2 icon-sm"></i>78.56k</p>
+																</td>
+																<td class="text-end">
+																	<p class="text-success fw-medium fs-13 mb-0"><i
+																			class="ri-arrow-up-s-fill fs-5 align-middle"></i>2.08%
+																	</p>
+																</td>
 															</tr>
-														</thead>
-														<tbody>
 															<tr>
 																<td>
-																	<a href="apps-ecommerce-order-details.html"
-																		class="fw-medium link-primary">#VZ2112</a>
+																	<h4 class="text-truncate fs-14 fs-medium mb-0"><i
+																			class="ri-stop-fill align-middle fs-18 text-warning me-2"></i>Mobile
+																		Users</h4>
 																</td>
 																<td>
-																	<div class="d-flex align-items-center">
-																		<div class="flex-shrink-0 me-2">
-																			<img src="/administration/assets/images/users/avatar-1.jpg"
-																				alt=""
-																				class="avatar-xs rounded-circle" />
-																		</div>
-																		<div class="flex-grow-1">Alex Smith</div>
-																	</div>
+																	<p class="text-muted mb-0"><i data-feather="users"
+																			class="me-2 icon-sm"></i>105.02k</p>
 																</td>
-																<td>Clothes</td>
-																<td>
-																	<span class="text-success">$109.00</span>
+																<td class="text-end">
+																	<p class="text-danger fw-medium fs-13 mb-0"><i
+																			class="ri-arrow-down-s-fill fs-5 align-middle"></i>10.52%
+																	</p>
 																</td>
-																<td>Zoetic Fashion</td>
-																<td>
-																	<span
-																		class="badge bg-success-subtle text-success">Paid</span>
-																</td>
-																<td>
-																	<h5 class="fs-14 fw-medium mb-0">5.0<span
-																			class="text-muted fs-13 ms-1">(61
-																			votes)</span></h5>
-																</td>
-															</tr><!-- end tr -->
+															</tr>
 															<tr>
 																<td>
-																	<a href="apps-ecommerce-order-details.html"
-																		class="fw-medium link-primary">#VZ2111</a>
+																	<h4 class="text-truncate fs-14 fs-medium mb-0"><i
+																			class="ri-stop-fill align-middle fs-18 text-info me-2"></i>Tablet
+																		Users</h4>
 																</td>
 																<td>
-																	<div class="d-flex align-items-center">
-																		<div class="flex-shrink-0 me-2">
-																			<img src="/administration/assets/images/users/avatar-2.jpg"
-																				alt=""
-																				class="avatar-xs rounded-circle" />
-																		</div>
-																		<div class="flex-grow-1">Jansh Brown</div>
-																	</div>
+																	<p class="text-muted mb-0"><i data-feather="users"
+																			class="me-2 icon-sm"></i>42.89k</p>
 																</td>
-																<td>Kitchen Storage</td>
-																<td>
-																	<span class="text-success">$149.00</span>
-																</td>
-																<td>Micro Design</td>
-																<td>
-																	<span
-																		class="badge bg-warning-subtle text-warning">Pending</span>
-																</td>
-																<td>
-																	<h5 class="fs-14 fw-medium mb-0">4.5<span
-																			class="text-muted fs-13 ms-1">(61
-																			votes)</span></h5>
-																</td>
-															</tr><!-- end tr -->
-															<tr>
-																<td>
-																	<a href="apps-ecommerce-order-details.html"
-																		class="fw-medium link-primary">#VZ2109</a>
-																</td>
-																<td>
-																	<div class="d-flex align-items-center">
-																		<div class="flex-shrink-0 me-2">
-																			<img src="/administration/assets/images/users/avatar-3.jpg"
-																				alt=""
-																				class="avatar-xs rounded-circle" />
-																		</div>
-																		<div class="flex-grow-1">Ayaan Bowen</div>
-																	</div>
-																</td>
-																<td>Bike Accessories</td>
-																<td>
-																	<span class="text-success">$215.00</span>
-																</td>
-																<td>Nesta Technologies</td>
-																<td>
-																	<span
-																		class="badge bg-success-subtle text-success">Paid</span>
-																</td>
-																<td>
-																	<h5 class="fs-14 fw-medium mb-0">4.9<span
-																			class="text-muted fs-13 ms-1">(89
-																			votes)</span></h5>
-																</td>
-															</tr><!-- end tr -->
-															<tr>
-																<td>
-																	<a href="apps-ecommerce-order-details.html"
-																		class="fw-medium link-primary">#VZ2108</a>
-																</td>
-																<td>
-																	<div class="d-flex align-items-center">
-																		<div class="flex-shrink-0 me-2">
-																			<img src="/administration/assets/images/users/avatar-4.jpg"
-																				alt=""
-																				class="avatar-xs rounded-circle" />
-																		</div>
-																		<div class="flex-grow-1">Prezy Mark</div>
-																	</div>
-																</td>
-																<td>Furniture</td>
-																<td>
-																	<span class="text-success">$199.00</span>
-																</td>
-																<td>Syntyce Solutions</td>
-																<td>
-																	<span
-																		class="badge bg-danger-subtle text-danger">Unpaid</span>
-																</td>
-																<td>
-																	<h5 class="fs-14 fw-medium mb-0">4.3<span
-																			class="text-muted fs-13 ms-1">(47
-																			votes)</span></h5>
-																</td>
-															</tr><!-- end tr -->
-															<tr>
-																<td>
-																	<a href="apps-ecommerce-order-details.html"
-																		class="fw-medium link-primary">#VZ2107</a>
-																</td>
-																<td>
-																	<div class="d-flex align-items-center">
-																		<div class="flex-shrink-0 me-2">
-																			<img src="/administration/assets/images/users/avatar-6.jpg"
-																				alt=""
-																				class="avatar-xs rounded-circle" />
-																		</div>
-																		<div class="flex-grow-1">Vihan Hudda</div>
-																	</div>
-																</td>
-																<td>Bags and Wallets</td>
-																<td>
-																	<span class="text-success">$330.00</span>
-																</td>
-																<td>iTest Factory</td>
-																<td>
-																	<span
-																		class="badge bg-success-subtle text-success">Paid</span>
-																</td>
-																<td>
-																	<h5 class="fs-14 fw-medium mb-0">4.7<span
-																			class="text-muted fs-13 ms-1">(161
-																			votes)</span></h5>
+																<td class="text-end">
+																	<p class="text-danger fw-medium fs-13 mb-0"><i
+																			class="ri-arrow-down-s-fill fs-5 align-middle"></i>7.36%
+																	</p>
 																</td>
 															</tr>
 														</tbody>
@@ -814,10 +698,123 @@ xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 												</div>
 											</div>
 										</div>
-									</div> 
-								</div> 
-							</div> 
-						</div> 
+									</div>
+
+									<div class="col-xl-6 col-md-6">
+										<div class="card card-height-100">
+											<div class="card-header align-items-center d-flex">
+												<h4 class="card-title mb-0 flex-grow-1">사이트 접속 경로분석</h4>
+												<div class="flex-shrink-0">
+													<button type="button" class="btn btn-soft-primary btn-sm">
+														Export Report
+													</button>
+												</div>
+											</div>
+
+											<div class="card-body">
+
+												<div class="row align-items-center">
+													<div class="col-6">
+														<h6
+															class="text-muted text-uppercase fw-bold text-truncate fs-13 mb-3">
+															Total Referrals Page</h6>
+														<h4 class="mb-0">725,800</h4>
+														<p class="mb-0 mt-2 text-muted"><span
+																class="badge bg-success-subtle text-success mb-0"> <i
+																	class="ri-arrow-up-line align-middle"></i> 15.72 %
+															</span> vs. previous month</p>
+													</div>
+													<div class="col-6">
+														<div class="text-center">
+															<img src="assets/images/illustrator-1.png" class="img-fluid"
+																alt="">
+														</div>
+													</div>
+												</div>
+												<div class="mt-3 pt-2">
+													<div class="progress progress-lg rounded-pill">
+														<div class="progress-bar bg-primary" role="progressbar"
+															style="width: 25%" aria-valuenow="25" aria-valuemin="0"
+															aria-valuemax="100"></div>
+														<div class="progress-bar bg-info" role="progressbar"
+															style="width: 18%" aria-valuenow="18" aria-valuemin="0"
+															aria-valuemax="100"></div>
+														<div class="progress-bar bg-success" role="progressbar"
+															style="width: 22%" aria-valuenow="22" aria-valuemin="0"
+															aria-valuemax="100"></div>
+														<div class="progress-bar bg-warning" role="progressbar"
+															style="width: 16%" aria-valuenow="16" aria-valuemin="0"
+															aria-valuemax="100"></div>
+														<div class="progress-bar bg-danger" role="progressbar"
+															style="width: 19%" aria-valuenow="19" aria-valuemin="0"
+															aria-valuemax="100"></div>
+													</div>
+												</div>
+
+												<div class="mt-3 pt-2">
+													<div class="d-flex mb-2">
+														<div class="flex-grow-1">
+															<p class="text-truncate text-muted fs-15 mb-0"><i
+																	class="mdi mdi-circle align-middle text-primary me-2"></i>www.google.com
+															</p>
+														</div>
+														<div class="flex-shrink-0">
+															<p class="mb-0">24.58%</p>
+														</div>
+													</div><!-- end -->
+													<div class="d-flex mb-2">
+														<div class="flex-grow-1">
+															<p class="text-truncate text-muted fs-15 mb-0"><i
+																	class="mdi mdi-circle align-middle text-info me-2"></i>www.youtube.com
+															</p>
+														</div>
+														<div class="flex-shrink-0">
+															<p class="mb-0">17.51%</p>
+														</div>
+													</div><!-- end -->
+													<div class="d-flex mb-2">
+														<div class="flex-grow-1">
+															<p class="text-truncate text-muted fs-15 mb-0"><i
+																	class="mdi mdi-circle align-middle text-success me-2"></i>www.meta.com
+															</p>
+														</div>
+														<div class="flex-shrink-0">
+															<p class="mb-0">23.05%</p>
+														</div>
+													</div><!-- end -->
+													<div class="d-flex mb-2">
+														<div class="flex-grow-1">
+															<p class="text-truncate text-muted fs-15 mb-0"><i
+																	class="mdi mdi-circle align-middle text-warning me-2"></i>www.medium.com
+															</p>
+														</div>
+														<div class="flex-shrink-0">
+															<p class="mb-0">12.22%</p>
+														</div>
+													</div><!-- end -->
+													<div class="d-flex">
+														<div class="flex-grow-1">
+															<p class="text-truncate text-muted fs-15 mb-0"><i
+																	class="mdi mdi-circle align-middle text-danger me-2"></i>Other
+															</p>
+														</div>
+														<div class="flex-shrink-0">
+															<p class="mb-0">17.58%</p>
+														</div>
+													</div><!-- end -->
+												</div><!-- end -->
+
+												<div class="mt-2 text-center">
+													<a href="javascript:void(0);"
+														class="text-muted text-decoration-underline">사이트접속경로 관리하기</a>
+												</div>
+
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
 
 						<div class="col-auto layout-rightside-col">
 							<div class="overlay"></div>
@@ -857,18 +854,18 @@ xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 														<div class="d-inline-flex gap-2 border border-dashed p-2 mb-2">
 															<a href="apps-ecommerce-product-details.html"
 																class="bg-light rounded p-1">
-																<img src="/administration/assets/images/products/img-8.png" alt=""
-																	class="img-fluid d-block" />
+																<img src="/administration/assets/images/products/img-8.png"
+																	alt="" class="img-fluid d-block" />
 															</a>
 															<a href="apps-ecommerce-product-details.html"
 																class="bg-light rounded p-1">
-																<img src="/administration/assets/images/products/img-2.png" alt=""
-																	class="img-fluid d-block" />
+																<img src="/administration/assets/images/products/img-2.png"
+																	alt="" class="img-fluid d-block" />
 															</a>
 															<a href="apps-ecommerce-product-details.html"
 																class="bg-light rounded p-1">
-																<img src="/administration/assets/images/products/img-10.png" alt=""
-																	class="img-fluid d-block" />
+																<img src="/administration/assets/images/products/img-10.png"
+																	alt="" class="img-fluid d-block" />
 															</a>
 														</div>
 														<p class="mb-0 text-muted"><small>9:47 PM Yesterday</small></p>
@@ -876,8 +873,8 @@ xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 												</div>
 												<div class="acitivity-item py-3 d-flex">
 													<div class="flex-shrink-0">
-														<img src="/administration/assets/images/users/avatar-2.jpg" alt=""
-															class="avatar-xs rounded-circle acitivity-avatar">
+														<img src="/administration/assets/images/users/avatar-2.jpg"
+															alt="" class="avatar-xs rounded-circle acitivity-avatar">
 													</div>
 													<div class="flex-grow-1 ms-3">
 														<h6 class="mb-1 lh-base">Natasha Carey have liked the products
@@ -958,8 +955,8 @@ xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 												</div>
 												<div class="acitivity-item d-flex">
 													<div class="flex-shrink-0">
-														<img src="/administration/assets/images/users/avatar-3.jpg" alt=""
-															class="avatar-xs rounded-circle acitivity-avatar" />
+														<img src="/administration/assets/images/users/avatar-3.jpg"
+															alt="" class="avatar-xs rounded-circle acitivity-avatar" />
 													</div>
 													<div class="flex-grow-1 ms-3">
 														<h6 class="mb-1 lh-base">Frank Hook Commented</h6>
@@ -1059,6 +1056,8 @@ xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 	<th:block th:replace="fragments/administration/common :: themeSrc"></th:block>
 
 	<th:block th:replace="fragments/administration/common :: scriptSrc"></th:block>
+	<script src="/administration/assets/js/pages/dashboard-analytics.init.js"></script>
+	<script src="/administration/assets/libs/apexcharts/apexcharts.min.js"></script>
 </body>
 
 </html>

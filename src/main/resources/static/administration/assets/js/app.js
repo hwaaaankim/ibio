@@ -478,7 +478,7 @@
         "/" == location.pathname
           ? "admin"
           : location.pathname.substring(1);
-    (a = a.substring(a.lastIndexOf("/") + 1)) &&
+    (a = location.pathname.substring(1)) &&
       ("twocolumn-panel" == document.body.className &&
         document
           .getElementById("two-column-menu")

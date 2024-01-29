@@ -36,67 +36,67 @@ public class DealerController {
 	@GetMapping("/dealerProductManager")
 	public String dealerProductManager() {
 		
-		return "administration/dealer/dealerProductManager";
+		return "administration/dealer/product/select/dealerProductManager";
 	}
 	
 	@GetMapping("/dealerProductDetail")
 	public String dealerProductDetail() {
 		
-		return "administration/dealer/dealerProductDetail";
+		return "administration/dealer/product/detail/dealerProductDetail";
 	}
 	
 	@GetMapping("/dealerProductInsert")
 	public String dealerProductInsert() {
 		
-		return "administration/dealer/dealerProductInsert";
+		return "administration/dealer/product/insert/dealerProductInsert";
 	}
 	
 	@PostMapping("/dealerProductUpdate")
 	public String dealerProductUpdate() {
 		
-		return "administration/dealer/dealerProductManager";
+		return "administration/dealer/product/select/dealerProductManager";
 	}
 	
 	@GetMapping("/dealerProductDelete")
 	public String dealerProductDelete() {
 		
-		return "administration/dealer/dealerProductManager";
+		return "administration/dealer/product/select/dealerProductManager";
 	}
 	
 	@GetMapping("/dealerProductInfoDumpManager")
 	public String dealerProductInfoDumpManager() {
 		
-		return "administration/dealer/dealerProductInfoDumpManager";
+		return "administration/dealer/product/select/dealerProductInfoDumpManager";
 	}
 
 	@GetMapping("/dealerProductFileDumpManager")
 	public String dealerProductFileDumpManager() {
 		
-		return "administration/dealer/dealerProductFileDumpManager";
+		return "administration/dealer/product/select/dealerProductFileDumpManager";
 	}
 	
 	@GetMapping("/dealerPaymentManager")
 	public String dealerPaymentManager() {
 		
-		return "administration/dealer/dealerPaymentManager";
+		return "administration/dealer/basic/select/dealerPaymentManager";
 	}
 	
 	@GetMapping("/dealerSellingManager")
 	public String dealerSellingManager() {
 		
-		return "administration/dealer/dealerSellingManager";
+		return "administration/dealer/basic/select/dealerSellingManager";
 	}
 	
 	@GetMapping("/dealerCalculationManager")
 	public String dealerCalculationManager() {
 		
-		return "administration/dealer/dealerCalculationManager";
+		return "administration/dealer/basic/select/dealerCalculationManager";
 	}
 	
 	@GetMapping("/dealerBillManager")
 	public String dealerBillManager() {
 		
-		return "administration/dealer/dealerBillManager";
+		return "administration/dealer/basic/select/dealerBillManager";
 	}
 }
 

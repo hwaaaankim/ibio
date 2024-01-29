@@ -16,10 +16,15 @@
 	<link href="/administration/assets/libs/jsvectormap/css/jsvectormap.min.css" rel="stylesheet" type="text/css" />
 	<link href="/administration/assets/libs/swiper/swiper-bundle.min.css" rel="stylesheet" type="text/css" />
 	<script src="/administration/assets/js/layout.js"></script>
-	<link href="/administration/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="/administration/assets/css/bootstrap.css" rel="stylesheet" type="text/css" />
 	<link href="/administration/assets/css/icons.min.css" rel="stylesheet" type="text/css" />
 	<link href="/administration/assets/css/app.min.css" rel="stylesheet" type="text/css" />
 	<link href="/administration/assets/css/custom.min.css" rel="stylesheet" type="text/css" />
+	 <link href="/administration/assets/libs/dropzone/dropzone.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="/administration/assets/libs/dropzone/dropzone.css" type="text/css" />
+
+    <link rel="stylesheet" href="/administration/assets/libs/filepond/filepond.min.css" type="text/css" />
+    <link rel="stylesheet" href="/administration/assets/libs/filepond-plugin-image-preview/filepond-plugin-image-preview.min.css">
 
 </head>
 
@@ -694,19 +699,28 @@
 							<div class="collapse menu-dropdown" id="sidebarLanding">
 								<ul class="nav nav-sm flex-column">
 									<li class="nav-item">
-										<a href="/admin/ibioProductManager" class="nav-link" data-key="t-one-page"> 본사제품관리 </a>
+										<a href="/admin/ibioProductManager" class="nav-link" data-key="t-one-page"> 본사제품 리스트페이지 </a>
 									</li>
 									<li class="nav-item">
-										<a href="/admin/ibioProductOverview" class="nav-link" data-key="t-nft-landing"> 본사제품개요 </a>
+										<a href="/admin/ibioProductManagerInsert" class="nav-link" data-key="t-one-page"> 본사제품 등록페이지 </a>
 									</li>
 									<li class="nav-item">
-										<a href="/admin/dealerProductManager" class="nav-link" data-key="t-job"> 딜러제품관리</a>
+										<a href="/admin/ibioProductManagerDetail" class="nav-link" data-key="t-one-page"> 본사제품 상세페이지 </a>
 									</li>
 									<li class="nav-item">
-										<a href="/admin/ibioProductInfoDumpManager" class="nav-link" data-key="t-job"> 제품정보대량관리</a>
+										<a href="/admin/ibioProductCategoryManager" class="nav-link" data-key="t-nft-landing"> 본사제품 카테고리관리 </a>
 									</li>
 									<li class="nav-item">
-										<a href="/admin/ibioProductFileDumpManager" class="nav-link" data-key="t-job"> 제품파일대량관리</a>
+										<a href="/admin/dealerProductManager" class="nav-link" data-key="t-job"> 딜러제품 관리페이지</a>
+									</li>
+									<li class="nav-item">
+										<a href="/admin/dealerProductManagerDetail" class="nav-link" data-key="t-one-page"> 딜러제품 상세페이지 </a>
+									</li>
+									<li class="nav-item">
+										<a href="/admin/ibioProductInfoDumpManager" class="nav-link" data-key="t-job"> 제품정보 추가관리</a>
+									</li>
+									<li class="nav-item">
+										<a href="/admin/ibioProductFileDumpManager" class="nav-link" data-key="t-job"> 제품정보 대량관리</a>
 									</li>
 								</ul>
 							</div>
@@ -1649,6 +1663,7 @@
 		<script src="/administration/assets/libs/swiper/swiper-bundle.min.js"></script>
 		<script src="/administration/assets/js/pages/dashboard-ecommerce.init.js"></script>
 		<script src="/administration/assets/js/app.js"></script>
+		<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 	</th:block>
 </body>
 

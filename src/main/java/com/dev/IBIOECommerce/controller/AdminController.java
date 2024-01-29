@@ -246,16 +246,34 @@ public class AdminController {
 		return "administration/ibio/product/select/ibioProductManager";
 	}
 	
-	@GetMapping("/ibioProductOverview")
-	public String ibioProductOverview() {
+	@GetMapping("/ibioProductManagerInsert")
+	public String ibioProductManagerInsert() {
 		
-		return "administration/ibio/product/select/ibioProductOverview";
+		return "administration/ibio/product/insert/ibioProductManagerInsert";
+	}
+	
+	@GetMapping("/ibioProductManagerDetail")
+	public String ibioProductManagerDetail() {
+		
+		return "administration/ibio/product/detail/ibioProductManagerDetail";
+	}
+	
+	@GetMapping("/ibioProductCategoryManager")
+	public String ibioProductCategoryManager() {
+		
+		return "administration/ibio/product/select/ibioProductCategoryManager";
 	}
 	
 	@GetMapping("/dealerProductManager")
 	public String dealerProductManager() {
 		
 		return "administration/ibio/product/select/dealerProductManager";
+	}
+	
+	@GetMapping("/dealerProductManagerDetail")
+	public String dealerProductManagerDetail() {
+		
+		return "administration/ibio/product/detail/dealerProductManagerDetail";
 	}
 	
 	@GetMapping("/ibioProductInfoDumpManager")
