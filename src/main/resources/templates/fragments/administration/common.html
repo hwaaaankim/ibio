@@ -20,9 +20,9 @@
 	<link href="/administration/assets/css/icons.min.css" rel="stylesheet" type="text/css" />
 	<link href="/administration/assets/css/app.min.css" rel="stylesheet" type="text/css" />
 	<link href="/administration/assets/css/custom.min.css" rel="stylesheet" type="text/css" />
-	 <link href="/administration/assets/libs/dropzone/dropzone.css" rel="stylesheet" type="text/css" />
+    <link href="/administration/assets/libs/sweetalert2/sweetalert2.min.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="/administration/assets/libs/dropzone/dropzone.css" type="text/css" />
-
+ 	<link rel="stylesheet" href="/administration/assets/libs/gridjs/theme/mermaid.min.css">
     <link rel="stylesheet" href="/administration/assets/libs/filepond/filepond.min.css" type="text/css" />
     <link rel="stylesheet" href="/administration/assets/libs/filepond-plugin-image-preview/filepond-plugin-image-preview.min.css">
 
@@ -594,25 +594,67 @@
 										<a href="/admin" class="nav-link" data-key="t-analytics"> HOME</a>
 									</li>
 									<li class="nav-item">
-										<a href="/admin/memberRegistrationCheck" class="nav-link" data-key="t-crm"> 회원가입관리</a>
+										<a href="/admin/memberRegistrationCheck" class="nav-link" data-key="t-crm"> 회원가입 관리</a>
 									</li>
 									<li class="nav-item">
-										<a href="/admin/dealerManager" class="nav-link" data-key="t-ecommerce"> 딜러회원관리 </a>
+										<a href="/admin/memberRegistrationCheckDetail" class="nav-link" data-key="t-crm"> 회원가입 관리상세</a>
 									</li>
 									<li class="nav-item">
-										<a href="/admin/memberManager" class="nav-link" data-key="t-crypto"> 일반회원관리</a>
+										<a href="/admin/dealerManager" class="nav-link" data-key="t-ecommerce"> 딜러회원 관리 </a>
 									</li>
 									<li class="nav-item">
-										<a href="/admin/memberInquiryManager" class="nav-link" data-key="t-crypto"> 일반회원문의관리</a>
+										<a href="/admin/dealerManagerDetail" class="nav-link" data-key="t-ecommerce"> 딜러회원 상세 </a>
 									</li>
 									<li class="nav-item">
-										<a href="/admin/dealerInquiryManager" class="nav-link" data-key="t-crypto"> 딜러회원문의관리</a>
+										<a href="/admin/dealerPaymentManagerDetail" class="nav-link" data-key="t-ecommerce"> 딜러회원 주문상세 </a>
 									</li>
 									<li class="nav-item">
-										<a href="/admin/refundManager" class="nav-link" data-key="t-crypto"> 환불문의관리</a>
+										<a href="/admin/dealerTradingManager" class="nav-link" data-key="t-ecommerce"> 딜러회원 판매내역 </a>
+									</li>
+									<li class="nav-item">
+										<a href="/admin/dealerTradingManagerDetail" class="nav-link" data-key="t-ecommerce"> 딜러회원 판매상세 </a>
+									</li>
+									<li class="nav-item">
+										<a href="/admin/memberManager" class="nav-link" data-key="t-crypto"> 일반회원 관리</a>
+									</li>
+									<li class="nav-item">
+										<a href="/admin/memberManagerDetail" class="nav-link" data-key="t-crypto"> 일반회원 상세</a>
+									</li>
+									<li class="nav-item">
+										<a href="/admin/memberPaymentManagerDetail" class="nav-link" data-key="t-crypto"> 일반회원 거래상세</a>
+									</li>
+									<li class="nav-item">
+										<a href="/admin/memberBillManagerInsert" class="nav-link" data-key="t-crypto"> 영수증 입력페이지</a>
+									</li>
+									<li class="nav-item">
+										<a href="/admin/memberBillManagerDetail" class="nav-link" data-key="t-crypto"> 영수증 상세페이지</a>
+									</li>
+									<li class="nav-item">
+										<a href="/admin/billManager" class="nav-link" data-key="t-crypto"> 영수증 관리</a>
+									</li>
+									<li class="nav-item">
+										<a href="/admin/memberInquiryManager" class="nav-link" data-key="t-crypto"> 일반회원 문의관리</a>
+									</li>
+									<li class="nav-item">
+										<a href="/admin/memberInquiryManagerDetail" class="nav-link" data-key="t-crypto"> 일반회원 문의상세</a>
+									</li>
+									<li class="nav-item">
+										<a href="/admin/dealerInquiryManager" class="nav-link" data-key="t-crypto"> 딜러회원 문의관리</a>
+									</li>
+									<li class="nav-item">
+										<a href="/admin/dealerInquiryManagerDetail" class="nav-link" data-key="t-crypto"> 딜러회원 문의상세</a>
+									</li>
+									<li class="nav-item">
+										<a href="/admin/refundManager" class="nav-link" data-key="t-crypto"> 환불문의 관리</a>
+									</li>
+									<li class="nav-item">
+										<a href="/admin/refundManagerDetail" class="nav-link" data-key="t-crypto"> 환불문의 관리상세</a>
 									</li>
 									<li class="nav-item">
 										<a href="/admin/couponManager" class="nav-link" data-key="t-crypto"> 쿠폰관리</a>
+									</li>
+									<li class="nav-item">
+										<a href="/admin/couponManagerDetail" class="nav-link" data-key="t-crypto"> 쿠폰관리 상세</a>
 									</li>
 								</ul>
 							</div>

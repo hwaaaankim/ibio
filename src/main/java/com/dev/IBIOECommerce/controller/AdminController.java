@@ -33,12 +33,29 @@ public class AdminController {
 		return "administration/ibio/member/select/dealerManager";
 	}
 	
+	@GetMapping("/dealerTradingManager")
+	public String dealerTradingManager() {
+		
+		return "administration/ibio/member/select/dealerTradingManager";
+	}
+	
 	@GetMapping("/dealerManagerDetail")
 	public String dealerManagerDetail() {
 		
 		return "administration/ibio/member/detail/dealerManagerDetail";
 	}
 	
+	@GetMapping("/dealerPaymentManagerDetail")
+	public String dealerPaymentManagerDetail() {
+		
+		return "administration/ibio/member/detail/dealerPaymentManagerDetail";
+	}
+	
+	@GetMapping("/dealerTradingManagerDetail")
+	public String dealerTradingManagerDetail() {
+		
+		return "administration/ibio/member/detail/dealerTradingManagerDetail";
+	}
 	
 	@GetMapping("/memberManager")
 	public String memberManager() {
@@ -50,6 +67,31 @@ public class AdminController {
 	public String memberManagerDetail() {
 		
 		return "administration/ibio/member/detail/memberManagerDetail";
+	}
+	
+	@GetMapping("/memberPaymentManagerDetail")
+	public String memberPaymentManagerDetail() {
+		
+		return "administration/ibio/member/detail/memberPaymentManagerDetail";
+	}
+	
+	
+	@GetMapping("/billManager")
+	public String billManager() {
+		
+		return "administration/ibio/basic/select/billManager";
+	}
+	
+	@GetMapping("/memberBillManagerDetail")
+	public String memberBillManagerDetail() {
+		
+		return "administration/ibio/member/detail/memberBillManagerDetail";
+	}
+	
+	@GetMapping("/memberBillManagerInsert")
+	public String memberBillManagerInsert() {
+		
+		return "administration/ibio/member/insert/memberBillManagerInsert";
 	}
 	
 	@GetMapping("/memberInquiryManager")
@@ -88,17 +130,10 @@ public class AdminController {
 		return "administration/ibio/member/detail/refundManagerDetail";
 	}
 	
-	
 	@GetMapping("/couponManager")
 	public String couponManager() {
 		
 		return "administration/ibio/member/select/couponManager";
-	}
-	
-	@GetMapping("/couponManagerInsert")
-	public String couponManagerInsert() {
-		
-		return "administration/ibio/member/insert/couponManagerInsert";
 	}
 	
 	@GetMapping("/couponManagerDetail")
@@ -232,14 +267,7 @@ public class AdminController {
 		
 		return "administration/ibio/basic/select/dealerSellingManager";
 	}
-	
-	
-	@GetMapping("/billManager")
-	public String billManager() {
-		
-		return "administration/ibio/basic/select/billManager";
-	}
-	
+
 	@GetMapping("/ibioProductManager")
 	public String ibioProductManager() {
 		

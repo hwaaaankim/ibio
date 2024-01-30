@@ -1,7 +1,7 @@
 [
 	{
 		"id": "1",
-		"project_name": "일반고객",
+		"project_name": "딜러회원",
 		"tasks_name": "Https://www.naver.com",
 		"client_name": "고객명",
 		"assignedto": [{
@@ -29,7 +29,7 @@
 	},
 	{
 		"id": "3",
-		"project_name": "일반고객",
+		"project_name": "딜러회원",
 		"tasks_name": "Https://www.naver.com",
 		"client_name": "고객명",
 		"assignedto": [{
@@ -43,7 +43,7 @@
 	},
 	{
 		"id": "4",
-		"project_name": "일반고객",
+		"project_name": "딜러회원",
 		"tasks_name": "Https://www.naver.com",
 		"client_name": "고객명",
 		"assignedto": [{
@@ -57,7 +57,7 @@
 	},
 	{
 		"id": "5",
-		"project_name": "일반고객",
+		"project_name": "딜러회원",
 		"tasks_name": "Https://www.naver.com",
 		"client_name": "고객명",
 		"assignedto": [{
@@ -71,7 +71,7 @@
 	},
 	{
 		"id": "6",
-		"project_name": "일반고객",
+		"project_name": "딜러회원",
 		"tasks_name": "Https://www.naver.com",
 		"client_name": "고객명",
 		"assignedto": [{
@@ -85,7 +85,7 @@
 	},
 	{
 		"id": "7",
-		"project_name": "일반고객",
+		"project_name": "딜러회원",
 		"tasks_name": "Https://www.naver.com",
 		"client_name": "고객명",
 		"assignedto": [{
@@ -99,7 +99,7 @@
 	},
 	{
 		"id": "8",
-		"project_name": "일반고객",
+		"project_name": "딜러회원",
 		"tasks_name": "Direct",
 		"client_name": "고객명",
 		"assignedto": [{
@@ -113,7 +113,7 @@
 	},
 	{
 		"id": "9",
-		"project_name": "일반고객",
+		"project_name": "딜러회원",
 		"tasks_name": "Https://www.facebook.com",
 		"client_name": "고객명",
 		"assignedto": [{
@@ -127,7 +127,7 @@
 	},
 	{
 		"id": "10",
-		"project_name": "일반고객",
+		"project_name": "딜러회원",
 		"tasks_name": "Https://www.naver.com",
 		"client_name": "고객명",
 		"assignedto": [{

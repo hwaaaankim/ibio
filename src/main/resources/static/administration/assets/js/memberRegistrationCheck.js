@@ -49,8 +49,7 @@ var invoice_new_obj,
 			img: "",
 			email: "contact@contact.com",
 			date: new Date(2024, 1, d - 23, 21, 58),
-			invoice_amount: 875,
-			status: "Refund",
+			status: "Checked",
 			billing_address: {
 				full_name: "이름",
 				address: "주소",
@@ -97,8 +96,7 @@ var invoice_new_obj,
 			img: "",
 			email: "contact@contact.com",
 			date: new Date(2024, 1, d - 23, 21, 58),
-			invoice_amount: 875,
-			status: "Paid",
+			status: "UnChecked",
 			billing_address: {
 				full_name: "이름",
 				address: "주소",
@@ -145,8 +143,7 @@ var invoice_new_obj,
 			img: "",
 			email: "contact@contact.com",
 			date: new Date(2024, 1, d - 23, 21, 58),
-			invoice_amount: 875,
-			status: "Unpaid",
+			status: "UnChecked",
 			billing_address: {
 				full_name: "이름",
 				address: "주소",
@@ -193,8 +190,7 @@ var invoice_new_obj,
 			img: "",
 			email: "contact@contact.com",
 			date: new Date(2024, 1, d - 23, 21, 58),
-			invoice_amount: 875,
-			status: "Refund",
+			status: "Checked",
 			billing_address: {
 				full_name: "이름",
 				address: "주소",
@@ -241,8 +237,7 @@ var invoice_new_obj,
 			img: "",
 			email: "contact@contact.com",
 			date: new Date(2024, 1, d - 23, 21, 58),
-			invoice_amount: 875,
-			status: "Paid",
+			status: "UnChecked",
 			billing_address: {
 				full_name: "이름",
 				address: "주소",
@@ -289,8 +284,7 @@ var invoice_new_obj,
 			img: "",
 			email: "contact@contact.com",
 			date: new Date(2024, 1, d - 23, 21, 58),
-			invoice_amount: 875,
-			status: "Unpaid",
+			status: "UnChecked",
 			billing_address: {
 				full_name: "이름",
 				address: "주소",
@@ -337,8 +331,7 @@ var invoice_new_obj,
 			img: "",
 			email: "contact@contact.com",
 			date: new Date(2024, 1, d - 23, 21, 58),
-			invoice_amount: 875,
-			status: "Refund",
+			status: "Checked",
 			billing_address: {
 				full_name: "이름",
 				address: "주소",
@@ -385,8 +378,7 @@ var invoice_new_obj,
 			img: "",
 			email: "contact@contact.com",
 			date: new Date(2024, 1, d - 23, 21, 58),
-			invoice_amount: 875,
-			status: "Paid",
+			status: "UnChecked",
 			billing_address: {
 				full_name: "이름",
 				address: "주소",
@@ -433,8 +425,7 @@ var invoice_new_obj,
 			img: "",
 			email: "contact@contact.com",
 			date: new Date(2024, 1, d - 23, 21, 58),
-			invoice_amount: 875,
-			status: "Unpaid",
+			status: "UnChecked",
 			billing_address: {
 				full_name: "이름",
 				address: "주소",
@@ -481,8 +472,7 @@ var invoice_new_obj,
 			img: "",
 			email: "contact@contact.com",
 			date: new Date(2024, 1, d - 23, 21, 58),
-			invoice_amount: 875,
-			status: "Refund",
+			status: "Checked",
 			billing_address: {
 				full_name: "이름",
 				address: "주소",
@@ -529,8 +519,7 @@ var invoice_new_obj,
 			img: "",
 			email: "contact@contact.com",
 			date: new Date(2024, 1, d - 23, 21, 58),
-			invoice_amount: 875,
-			status: "Paid",
+			status: "UnChecked",
 			billing_address: {
 				full_name: "이름",
 				address: "주소",
@@ -577,8 +566,7 @@ var invoice_new_obj,
 			img: "",
 			email: "contact@contact.com",
 			date: new Date(2024, 1, d - 23, 21, 58),
-			invoice_amount: 875,
-			status: "Unpaid",
+			status: "UnChecked",
 			billing_address: {
 				full_name: "이름",
 				address: "주소",
@@ -625,8 +613,7 @@ var invoice_new_obj,
 			img: "",
 			email: "contact@contact.com",
 			date: new Date(2024, 1, d - 23, 21, 58),
-			invoice_amount: 875,
-			status: "Refund",
+			status: "Checked",
 			billing_address: {
 				full_name: "이름",
 				address: "주소",
@@ -673,8 +660,7 @@ var invoice_new_obj,
 			img: "",
 			email: "contact@contact.com",
 			date: new Date(2024, 1, d - 23, 21, 58),
-			invoice_amount: 875,
-			status: "Paid",
+			status: "UnChecked",
 			billing_address: {
 				full_name: "이름",
 				address: "주소",
@@ -721,8 +707,7 @@ var invoice_new_obj,
 			img: "",
 			email: "contact@contact.com",
 			date: new Date(2024, 1, d - 23, 21, 58),
-			invoice_amount: 875,
-			status: "Unpaid",
+			status: "UnChecked",
 			billing_address: {
 				full_name: "이름",
 				address: "주소",
@@ -786,13 +771,10 @@ var invoice_new_obj,
 			Array.from(Invoices).forEach(function(e) {
 				let t;
 				switch (e.status) {
-					case "Paid":
-						t = "success";
-						break;
-					case "Refund":
+					case "Checked":
 						t = "primary";
 						break;
-					case "Unpaid":
+					case "UnChecked":
 						t = "warning";
 						break;
 					case "Cancel":
@@ -809,11 +791,7 @@ var invoice_new_obj,
 					"</div></div>";
 				var a =
 					`<tr>
-                <td class="id"><a href="javascript:void(0);" onclick="ViewInvoice(this);" data-id="` +
-					e.invoice_no +
-					'" class="fw-medium link-primary">#VL' +
-					e.invoice_no +
-					`</a></td>
+                <td class="id"><a href="TEL : 010-1234-1234">010-1234-1234</a></td>
                 <td class="customer_name">
                     <div class="d-flex align-items-center">
                         ` +
@@ -830,9 +808,6 @@ var invoice_new_obj,
 					' <small class="text-muted">' +
 					tConvert(e.date) +
 					`</small></td>
-                <td class="invoice_amount">$` +
-					e.invoice_amount +
-					`</td>
                 <td class="status"><span class="badge bg-` +
 					t +
 					"-subtle text-" +
@@ -847,10 +822,11 @@ var invoice_new_obj,
                             <i class="ri-more-fill align-middle"></i>
                         </button>
                         <ul class="dropdown-menu dropdown-menu-end">
-                            <li><button class="dropdown-item" href="javascript:void(0);" onclick="ViewInvoice(this);" data-id="` +
-					e.invoice_no +
-					`" ><i class="ri-eye-fill align-bottom me-2 text-muted"></i>
-                                    View</button></li>
+                            <li><a class="dropdown-item remove-item-btn" data-bs-toggle="modal" href="#changeOrder">
+                                   	<i class="bx bx-refresh"></i>
+                                    전환하기
+                                </a>
+                            </li>
                             <li class="dropdown-divider"></li>
                             <li>
                                 <a class="dropdown-item remove-item-btn" data-bs-toggle="modal" href="#deleteOrder">
@@ -900,11 +876,10 @@ var invoice_new_obj,
 			8),
 	options = {
 		valueNames: [
-			"id",
+			"Phone",
 			"customer_name",
 			"email",
 			"date",
-			"invoice_amount",
 			"status",
 		],
 		page: perPage,

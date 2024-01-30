@@ -93,11 +93,11 @@ const xhttp = new XMLHttpRequest();
       (a += "</div>"),
       tasksList.add({
         id:
-          '<a href="apps-tasks-details.html" class="fw-medium link-primary">#VLZ' +
+          '<a href="/admin/dealerManagerDetail" class="fw-medium link-primary">#VLZ' +
           e.id +
           "</a>",
         project_name:
-          '<a href="apps-projects-overview.html" class="fw-medium link-primary">' +
+          '<a href="/admin/dealerManagerDetail" class="fw-medium link-primary">' +
           e.project_name +
           "</a>",
         tasks_name: e.tasks_name,
@@ -116,7 +116,7 @@ const xhttp = new XMLHttpRequest();
       '<a href="apps-tasks-details.html" class="fw-medium link-primary">#VLZ501</a>'
     );
 }),
-  xhttp.open("GET", "assets/json/tasks-list.json"),
+  xhttp.open("GET", "/administration/assets/js/newJson/tasks-list.json"),
   xhttp.send();
 var isValue = (isCount = new DOMParser().parseFromString(
     tasksList.items.slice(-1)[0]._values.id,
@@ -163,7 +163,7 @@ refreshCallbacks(),
     .addEventListener("show.bs.modal", function (e) {
       e.relatedTarget.classList.contains("edit-item-btn")
         ? ((document.getElementById("exampleModalLabel").innerHTML =
-            "Edit Task"),
+            "회원정보 간단수정"),
           (document
             .getElementById("showModal")
             .querySelector(".modal-footer").style.display = "block"),
@@ -252,11 +252,11 @@ var table = document.getElementById("tasksTable"),
                   }))
                 : (tasksList.add({
                     id:
-                      '<a href="apps-tasks-details.html" class="fw-medium link-primary">#VLZ' +
+                      '<a href="/admin/dealerManagerDetail" class="fw-medium link-primary">#VLZ' +
                       count +
                       "</a>",
                     project_name:
-                      '<a href="apps-projects-overview.html" class="fw-medium link-primary">' +
+                      '<a href="/admin/dealerManagerDetail" class="fw-medium link-primary">' +
                       projectNameField.value +
                       "</a>",
                     tasks_name: tasksTitleField.value,
@@ -487,7 +487,7 @@ function assignToUsers() {
   return (
     Array.from(e.slice(0, 3)).forEach(function (e) {
       t +=
-        '<a href="javascript: void(0);" class="avatar-group-item" data-img="' +
+        '<a href="/admin/dealerManagerTradingDetail" class="avatar-group-item" data-img="' +
         e.assigneeImg +
         '"  data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="' +
         e.assigneeName +

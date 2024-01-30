@@ -33,12 +33,12 @@
 					<div class="row">
 						<div class="col-12">
 							<div class="page-title-box d-sm-flex align-items-center justify-content-between">
-								<h4 class="mb-sm-0">구매자 상세페이지</h4>
+								<h4 class="mb-sm-0">딜러 상세페이지</h4>
 
 								<div class="page-title-right">
 									<ol class="breadcrumb m-0">
 										<li class="breadcrumb-item"><a href="javascript: void(0);">Ecommerce</a></li>
-										<li class="breadcrumb-item active">구매자 상세페이지</li>
+										<li class="breadcrumb-item active">딜러 판매정보</li>
 									</ol>
 								</div>
 
@@ -58,7 +58,7 @@
 											</div>
 										</div>
 										<div class="mt-4 text-center">
-											<h5 class="mb-1">구매자명</h5>
+											<h5 class="mb-1">딜러명</h5>
 											<p class="text-muted">회원가입일 : 2024.01.01</p>
 										</div>
 										<div class="table-responsive">
@@ -93,34 +93,8 @@
 										</div>
 									</div>
 								</div>
-								<!--end card-body-->
-								<div class="card-body border-top border-top-dashed p-4">
-									<div>
-										<h6 class="text-muted text-uppercase fw-semibold mb-4">고객 평균 별점</h6>
-										<div>
-											<div>
-												<div class="bg-light px-3 py-2 rounded-2 mb-2">
-													<div class="d-flex align-items-center">
-														<div class="flex-grow-1">
-															<div class="fs-16 align-middle text-warning">
-																<i class="ri-star-fill"></i>
-																<i class="ri-star-fill"></i>
-																<i class="ri-star-fill"></i>
-																<i class="ri-star-fill"></i>
-																<i class="ri-star-half-fill"></i>
-															</div>
-														</div>
-														<div class="flex-shrink-0">
-															<h6 class="mb-0">평균 4.5 별점부여</h6>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
 								<div class="card-body p-4 border-top border-top-dashed">
-									<h6 class="text-muted text-uppercase fw-semibold mb-4">고객에게 메시지 전송</h6>
+									<h6 class="text-muted text-uppercase fw-semibold mb-4">딜러에게 메시지 전송</h6>
 									<form action="#">
 										<div class="mb-3">
 											<textarea class="form-control" id="exampleFormControlTextarea1" rows="4"
@@ -139,9 +113,13 @@
 							<div class="row g-4 mb-3">
 								<div class="col-sm">
 									<div class="d-flex justify-content-sm-end">
-										<div class="search-box ms-2">
+										<div class="search-box ms-2" style="margin-right:10px;">
+											
 											<input type="text" class="form-control" placeholder="Search Products...">
 											<i class="ri-search-line search-icon"></i>
+										</div>
+										<div>
+											<a href="/admin/dealerTradingManager" class="btn btn-primary"><i class="bx bx-search"></i> 구매 정보보기</a>
 										</div>
 									</div>
 								</div>
@@ -153,15 +131,15 @@
 
 								<div class="card-header p-0 border-0 bg-light-subtle">
 									<div class="row g-0 text-center">
-										<div class="col-6 col-sm-3">
+										<div class="col-6 col-sm-4">
 											<div class="p-3 border border-dashed border-start-0">
 												<h5 class="mb-1"><span class="counter-value" data-target="7585">0</span>
 												</h5>
-												<p class="text-muted mb-0">주문 횟수</p>
+												<p class="text-muted mb-0">판매 거래 수</p>
 											</div>
 										</div>
 										<!--end col-->
-										<div class="col-6 col-sm-3">
+										<div class="col-6 col-sm-4">
 											<div class="p-3 border border-dashed border-start-0">
 												<h5 class="mb-1"><span class="counter-value"
 														data-target="22.89">0</span>k</h5>
@@ -169,19 +147,11 @@
 											</div>
 										</div>
 										<!--end col-->
-										<div class="col-6 col-sm-3">
+										<div class="col-6 col-sm-4">
 											<div class="p-3 border border-dashed border-start-0">
 												<h5 class="mb-1"><span class="counter-value" data-target="367">0</span>
 												</h5>
 												<p class="text-muted mb-0">환불</p>
-											</div>
-										</div>
-										<!--end col-->
-										<div class="col-6 col-sm-3">
-											<div class="p-3 border border-dashed border-start-0 border-end-0">
-												<h5 class="mb-1 text-success"><span class="counter-value"
-														data-target="18.92">0</span>%</h5>
-												<p class="text-muted mb-0">방문 비율 / 구매 비율</p>
 											</div>
 										</div>
 									</div>
@@ -195,7 +165,6 @@
 									<div id="table-product-list-all" class="table-card gridjs-border-none"></div>
 								</div>
 							</div>
-
 						</div>
 					</div>
 				</div>
@@ -214,7 +183,7 @@
     <script src="/administration/assets/libs/gridjs/gridjs.umd.js"></script>
     <script src="https://unpkg.com/gridjs/plugins/selection/dist/selection.umd.js"></script>
     <script src="/administration/assets/libs/swiper/swiper-bundle.min.js"></script>
-    <script src="/administration/assets/js/pages/seller-details.init.js"></script>
+    <script src="/administration/assets/js/dealerTradingManager.js"></script>
 	
 	
 </body>

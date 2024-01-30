@@ -21,29 +21,13 @@ TableProductListAll &&
   new gridjs.Grid({
     columns: [
       {
-        name: "#",
-        width: "40px",
-        sort: { enabled: !1 },
-        data: function (e) {
-          return gridjs.html(
-            '<div class="form-check checkbox-product-list">\t\t\t\t\t<input class="form-check-input" type="checkbox" value="' +
-              e.id +
-              '" id="checkbox-' +
-              e.id +
-              '">\t\t\t\t\t<label class="form-check-label" for="checkbox-' +
-              e.id +
-              '"></label>\t\t\t\t  </div>'
-          );
-        },
-      },
-      {
-        name: "Product",
-        width: "360px",
+        name: "거래품목",
+        width: "330px",
         formatter: function (e) {
           return gridjs.html(
-            '<div class="d-flex align-items-center"><div class="flex-shrink-0 me-3"><div class="avatar-sm bg-light rounded p-1"><img src="assets/images/products/' +
+            '<div class="d-flex align-items-center"><div class="flex-shrink-0 me-3"><div class="avatar-sm bg-light rounded p-1"><img src="/administration/assets/images/products/' +
               e[0] +
-              '" alt="" class="img-fluid d-block"></div></div><div class="flex-grow-1"><h5 class="fs-14 mb-1"><a href="apps-ecommerce-product-details.html" class="text-body">' +
+              '" alt="" class="img-fluid d-block"></div></div><div class="flex-grow-1"><h5 class="fs-14 mb-1"><a href="/admin/dealerPaymentManagerDetail" class="text-body">' +
               e[1] +
               '</a></h5><p class="text-muted mb-0">Category : <span class="fw-medium">' +
               e[2] +
@@ -51,11 +35,20 @@ TableProductListAll &&
           );
         },
       },
-      { name: "Stock", width: "94px" },
-      { name: "Price", width: "101px" },
-      { name: "Orders", width: "84px" },
+      { name: "제품금액", width: "101px" },
+      { 
+		  name: "주문상태", 
+      	  width: "114px",
+      	  formatter: function (e) {
+          return gridjs.html(
+              //'<span><a href="/admin/memberPaymentManagerDetail>' + e + '</a></span>'
+              '<div class="d-flex align-items-center"><div class="flex-grow-1"><h5 class="fs-14 mb-1"><a href="/admin/dealerPaymentManagerDetail" class="text-body">' +
+               e +
+              '</a></h5></div></div>' 
+          );
+        },},
       {
-        name: "Rating",
+        name: "별점",
         width: "105px",
         formatter: function (e) {
           return gridjs.html(
@@ -66,21 +59,11 @@ TableProductListAll &&
         },
       },
       {
-        name: "Published",
+        name: "구매일",
         width: "220px",
         formatter: function (e) {
           return gridjs.html(
             e[0] + '<small class="text-muted ms-1">' + e[1] + "</small>"
-          );
-        },
-      },
-      {
-        name: "Action",
-        width: "80px",
-        sort: { enabled: !1 },
-        formatter: function (e) {
-          return gridjs.html(
-            '<div class="dropdown"><button class="btn btn-soft-secondary btn-sm dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="ri-more-fill"></i></button><ul class="dropdown-menu dropdown-menu-end"><li><a class="dropdown-item" href="apps-ecommerce-product-details.html"><i class="ri-eye-fill align-bottom me-2 text-muted"></i> View</a></li><li><a class="dropdown-item" href="apps-ecommerce-add-product.html"><i class="ri-pencil-fill align-bottom me-2 text-muted"></i> Edit</a></li><li class="dropdown-divider"></li><li><a class="dropdown-item" href="#!"><i class="ri-delete-bin-fill align-bottom me-2 text-muted"></i> Delete</a></li></ul></div>'
           );
         },
       },
@@ -90,112 +73,74 @@ TableProductListAll &&
     sort: !0,
     data: [
       [
-        ["img-1.png", "Half Sleeve Round Neck T-Shirts", "Clothes"],
-        "12",
-        "$ 115.00",
-        "48",
-        "4.2",
-        ["12 Oct, 2021", "10:05 AM"],
-      ],
-      [
-        ["img-2.png", "Urban Ladder Pashe Chair", "Furniture"],
-        "06",
-        "$ 160.00",
-        "30",
+        ["img-2.png", "제품명", "대분류/중분류/소분류/브랜드"],
+        "제품금액",
+        "Paid",
         "4.3",
-        ["06 Jan, 2021", "01:31 PM"],
+        ["2024.01.01", "11:30AM"],
       ],
       [
-        [
-          "img-3.png",
-          "350 ml Glass Grocery Container",
-          "Kitchen Storage & Containers",
-        ],
-        "10",
-        "$ 25.00",
-        "48",
-        "4.5",
-        ["26 Mar, 2021", "11:40 AM"],
-      ],
-      [
-        ["img-4.png", "Fabric Dual Tone Living Room Chair", "Furniture"],
-        "15",
-        "$ 140.00",
-        "40",
-        "4.2",
-        ["19 Apr, 2021", "02:51 PM"],
-      ],
-      [
-        ["img-5.png", "Crux Motorsports Helmet", "Bike Accessories"],
-        "08",
-        "$ 135.00",
-        "55",
-        "4.4",
-        ["30 Mar, 2021", "09:42 AM"],
-      ],
-      [
-        ["img-6.png", "Half Sleeve T-Shirts (Blue)", "Clothes"],
-        "15",
-        "$ 125.00",
-        "48",
-        "4.2",
-        ["12 Oct, 2021", "04:55 PM"],
-      ],
-      [
-        ["img-7.png", "Noise Evolve Smartwatch", "Watches"],
-        "12",
-        "$ 95.00",
-        "45",
+        ["img-2.png", "제품명", "대분류/중분류/소분류/브랜드"],
+        "제품금액",
+        "Paid",
         "4.3",
-        ["15 May, 2021", "03:40 PM"],
+        ["2024.01.01", "11:30AM"],
       ],
       [
-        ["img-8.png", "Sweatshirt for Men (Pink)", "Clothes"],
-        "20",
-        "$ 120.00",
-        "48",
-        "4.2",
-        ["21 Jun, 2021", "12:18 PM"],
-      ],
-      [
-        [
-          "img-9.png",
-          "Reusable Ecological Coffee Cup",
-          "Tableware & Dinnerware",
-        ],
-        "14",
-        "$ 125.00",
-        "55",
+        ["img-2.png", "제품명", "대분류/중분류/소분류/브랜드"],
+        "제품금액",
+        "Paid",
         "4.3",
-        ["15 Jan, 2021", "10:29 AM"],
+        ["2024.01.01", "11:30AM"],
       ],
       [
-        [
-          "img-10.png",
-          "Travel Carrying Pouch Bag",
-          "Bags, Wallets and Luggage",
-        ],
-        "20",
-        "$ 115.00",
-        "60",
+        ["img-2.png", "제품명", "대분류/중분류/소분류/브랜드"],
+        "제품금액",
+        "Paid",
         "4.3",
-        ["15 Jun, 2021", "03:51 Pm"],
+        ["2024.01.01", "11:30AM"],
       ],
       [
-        ["img-1.png", "Half Sleeve Round Neck T-Shirts", "Clothes"],
-        "12",
-        "$ 115.00",
-        "48",
-        "4.2",
-        ["12 Oct, 2021", "10:05 AM"],
-      ],
-      [
-        ["img-2.png", "Urban Ladder Pashe Chair", "Furniture"],
-        "06",
-        "$ 160.00",
-        "30",
+        ["img-2.png", "제품명", "대분류/중분류/소분류/브랜드"],
+        "제품금액",
+        "Paid",
         "4.3",
-        ["06 Jan, 2021", "01:31 PM"],
+        ["2024.01.01", "11:30AM"],
+      ],
+      [
+        ["img-2.png", "제품명", "대분류/중분류/소분류/브랜드"],
+        "제품금액",
+        "Paid",
+        "4.3",
+        ["2024.01.01", "11:30AM"],
+      ],
+      [
+        ["img-2.png", "제품명", "대분류/중분류/소분류/브랜드"],
+        "제품금액",
+        "Paid",
+        "4.3",
+        ["2024.01.01", "11:30AM"],
+      ],
+      [
+        ["img-2.png", "제품명", "대분류/중분류/소분류/브랜드"],
+        "제품금액",
+        "Paid",
+        "4.3",
+        ["2024.01.01", "11:30AM"],
+      ],
+      [
+        ["img-2.png", "제품명", "대분류/중분류/소분류/브랜드"],
+        "제품금액",
+        "Paid",
+        "4.3",
+        ["2024.01.01", "11:30AM"],
+      ],
+      [
+        ["img-2.png", "제품명", "대분류/중분류/소분류/브랜드"],
+        "제품금액",
+        "Paid",
+        "4.3",
+        ["2024.01.01", "11:30AM"],
       ],
     ],
   }).render(document.getElementById("table-product-list-all"));
