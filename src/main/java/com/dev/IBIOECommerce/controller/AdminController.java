@@ -247,7 +247,13 @@ public class AdminController {
 	@GetMapping("/mamberCalculationManager")
 	public String mamberCalculationManager() {
 		
-		return "administration/ibio/basic/select/mamberCalculationManager";
+		return "administration/ibio/basic/select/memberCalculationManager";
+	}
+	
+	@GetMapping("/mamberCalculationManagerDetail")
+	public String mamberCalculationManagerDetail() {
+		
+		return "administration/ibio/basic/detail/memberCalculationManagerDetail";
 	}
 	
 	@GetMapping("/dealerCalculationManager")
@@ -256,17 +262,12 @@ public class AdminController {
 		return "administration/ibio/basic/select/dealerCalculationManager";
 	}
 	
-	@GetMapping("/memberSellingManager")
-	public String memberSellingManager() {
+	@GetMapping("/dealerCalculationManagerDetail")
+	public String dealerCalculationManagerDetail() {
 		
-		return "administration/ibio/basic/select/memberSellingManager";
+		return "administration/ibio/basic/detail/dealerCalculationManagerDetail";
 	}
 	
-	@GetMapping("/dealerSellingManager")
-	public String dealerSellingManager() {
-		
-		return "administration/ibio/basic/select/dealerSellingManager";
-	}
 
 	@GetMapping("/ibioProductManager")
 	public String ibioProductManager() {
