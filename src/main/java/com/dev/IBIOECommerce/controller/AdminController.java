@@ -145,67 +145,67 @@ public class AdminController {
 	@GetMapping("/siteManager")
 	public String siteManager() {
 		
-		return "administration/ibio/basic/select/siteManager";
+		return "administration/ibio/site/select/siteManager";
 	}
 	
 	@GetMapping("/eventManager")
 	public String eventManager() {
 		
-		return "administration/ibio/basic/select/eventManager";
+		return "administration/ibio/site/select/eventManager";
 	}
 	
 	@GetMapping("/eventManagerInsert")
 	public String eventManagerInsert() {
 		
-		return "administration/ibio/basic/insert/eventManagerInsert";
+		return "administration/ibio/site/insert/eventManagerInsert";
 	}
 	
 	@GetMapping("/eventManagerDetail")
 	public String eventManagerDetail() {
 		
-		return "administration/ibio/basic/detail/eventManagerDetail";
+		return "administration/ibio/site/detail/eventManagerDetail";
 	}
 	
 	@GetMapping("/noticeManager")
 	public String noticeManager() {
 		
-		return "administration/ibio/basic/select/noticeManager";
+		return "administration/ibio/site/select/noticeManager";
 	}
 	
 	@GetMapping("/noticeManagerInsert")
 	public String noticeManagerInsert() {
 		
-		return "administration/ibio/basic/insert/noticeManagerInsert";
+		return "administration/ibio/site/insert/noticeManagerInsert";
 	}
 	
 	@GetMapping("/noticeManagerDetail")
 	public String noticeManagerDetail() {
 		
-		return "administration/ibio/basic/detail/noticeManagerDetail";
+		return "administration/ibio/site/detail/noticeManagerDetail";
 	}
 	
 	@GetMapping("/faqManager")
 	public String faqManager() {
 		
-		return "administration/ibio/basic/select/faqManager";
+		return "administration/ibio/site/select/faqManager";
 	}
 	
 	@GetMapping("/faqManagerInsert")
 	public String faqManagerInsert() {
 		
-		return "administration/ibio/basic/select/faqManagerInsert";
+		return "administration/ibio/site/select/faqManagerInsert";
 	}
 	
 	@GetMapping("/faqManagerDetail")
 	public String faqManagerDetail() {
 		
-		return "administration/ibio/basic/detail/faqManagerDetail";
+		return "administration/ibio/site/detail/faqManagerDetail";
 	}
 	
 	@GetMapping("/bannerManager")
 	public String bannerManager() {
 		
-		return "administration/ibio/basic/select/bannerManager";
+		return "administration/ibio/site/select/bannerManager";
 	}
 	
 	@GetMapping("/accessManager")
@@ -290,6 +290,12 @@ public class AdminController {
 	public String ibioProductCategoryManager() {
 		
 		return "administration/ibio/product/select/ibioProductCategoryManager";
+	}
+	
+	@GetMapping("/ibioProductIndexManager")
+	public String ibioProductIndexManager() {
+		
+		return "administration/ibio/product/select/ibioProductIndexManager";
 	}
 	
 	@GetMapping("/dealerProductManager")
