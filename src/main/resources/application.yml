@@ -13,6 +13,7 @@ server:
         http-only: true
         secure: true
 # 개발 환경
+# GIT CHECK
 --- 
 logging:
   file.name: logs/application-debug.log
