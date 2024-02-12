@@ -41,7 +41,7 @@ public class CommonController {
 	@GetMapping("/dealerSignupForm")
 	public String dealerSignupForm() {
 		
-		return "front/dealer/signupForm";
+		return "front/common/dealer/signupForm";
 	}
 	
 	@GetMapping("/notice")

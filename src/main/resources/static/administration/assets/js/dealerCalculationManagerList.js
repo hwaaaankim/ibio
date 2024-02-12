@@ -25,13 +25,13 @@ var checkAll = document.getElementById("checkAll"),
   options = {
     valueNames: [
       "id",
-      "거래코드",
-      "거래제목",
-      "고객명",
-      "생성일",
-      "변경일",
-      "상태",
-      "비고",
+      "project_name",
+      "tasks_name",
+      "client_name",
+      "assignedto",
+      "due_date",
+      "status",
+      "priority",
     ],
     page: perPage,
     pagination: !0,
@@ -93,16 +93,16 @@ const xhttp = new XMLHttpRequest();
       (a += "</div>"),
       tasksList.add({
         id:
-          '<a href="/admin/memberCalculationManagerDetail" class="fw-medium link-primary">#VLZ' +
+          '<a href="/admin/memberManagerDetail" class="fw-medium link-primary">#VLZ' +
           e.id +
           "</a>",
         project_name:
-          '<a href="/admin/memberCalculationManagerDetail" class="fw-medium link-primary">' +
+          '<a href="/admin/dealerCalculationManagerDetail" class="fw-medium link-primary">' +
           e.project_name +
           "</a>",
         tasks_name: e.tasks_name,
         client_name: e.client_name,
-        assignedto: a,
+        assignedto:e.assignedto,
         due_date: e.due_date,
         status: isStatus(e.status),
         priority: isPriority(e.priority),
@@ -113,10 +113,10 @@ const xhttp = new XMLHttpRequest();
   }),
     tasksList.remove(
       "id",
-      '<a href="/admin/memberCalculationManagerDetail" class="fw-medium link-primary">#VLZ501</a>'
+      '<a href="apps-tasks-details.html" class="fw-medium link-primary">#VLZ501</a>'
     );
 }),
-  xhttp.open("GET", "/administration/assets/js/newJson/memberCalculationManager.json"),
+  xhttp.open("GET", "/administration/assets/js/newJson/dealerCalculationManager.json"),
   xhttp.send();
 var isValue = (isCount = new DOMParser().parseFromString(
     tasksList.items.slice(-1)[0]._values.id,
@@ -228,7 +228,7 @@ var table = document.getElementById("tasksTable"),
                           idField.value +
                           "</a>",
                         project_name:
-                          '<a href="/admin/memberCalculationManagerDetail" class="fw-medium link-primary">' +
+                          '<a href="apps-projects-overview.html" class="fw-medium link-primary">' +
                           projectNameField.value +
                           "</a>",
                         tasks_name: tasksTitleField.value,
@@ -252,11 +252,11 @@ var table = document.getElementById("tasksTable"),
                   }))
                 : (tasksList.add({
                     id:
-                      '<a href="/admin/memberCalculationManagerDetail" class="fw-medium link-primary">#VLZ' +
+                      '<a href="apps-tasks-details.html" class="fw-medium link-primary">#VLZ' +
                       count +
                       "</a>",
                     project_name:
-                      '<a href="/admin/memberCalculationManagerDetail" class="fw-medium link-primary">' +
+                      '<a href="apps-projects-overview.html" class="fw-medium link-primary">' +
                       projectNameField.value +
                       "</a>",
                     tasks_name: tasksTitleField.value,

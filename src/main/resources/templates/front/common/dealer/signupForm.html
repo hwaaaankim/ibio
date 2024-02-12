@@ -13,17 +13,19 @@
 			<ul class="breadcrumb">
 				<li><a href="#"><i class="fa fa-home"></i></a></li>
 				<li><a href="#">ACCOUNT</a></li>
-				<li><a href="#">SIGN UP</a></li>
+				<li><a href="#">딜러 회원가입</a></li>
 			</ul>
 
 			<div class="row">
 				<div id="content" class="col-sm-12">
-					<h2 class="title">Register Account</h2>
-					<p>If you already have an account with us, please login at the <a href="#">login page</a>.</p>
+					<h2 class="title">딜러 회원 가입</h2>
+					<p># 일반 구매자 회원은 <a href="#">일반회원가입</a>을 진행 해 주시기 바랍니다.</p>
+					<p># 딜러회원 가입의 경우 회원신청 완료 후 관리자의 승인 전까지는 일반회원으로의 활동만 가능합니다.</p>
+					<p># 관리자 승인 시 입력한 이메일과 문자를 통해 안내되니 정확한 정보를 입력 해 주시기.</p>
 					<form action="" method="post" enctype="multipart/form-data"
 						class="form-horizontal account-register clearfix">
 						<fieldset id="account">
-							<legend>Your Personal Details</legend>
+							<legend>개인정보 입력</legend>
 							<div class="form-group required" style="display: none;">
 								<label class="col-sm-2 control-label">Customer Group</label>
 								<div class="col-sm-10">
@@ -50,6 +52,18 @@
 								</div>
 							</div>
 							<div class="form-group required">
+								<label class="col-sm-2 control-label" for="input-lastname">업체명</label>
+								<div class="col-sm-10">
+									<input type="text" name="lastname" value=""class="form-control">
+								</div>
+							</div>
+							<div class="form-group required">
+								<label class="col-sm-2 control-label" for="input-lastname">사업자 등록번호</label>
+								<div class="col-sm-10">
+									<input type="text" name="lastname" value=""class="form-control">
+								</div>
+							</div>
+							<div class="form-group required">
 								<label class="col-sm-2 control-label" for="input-email">E-Mail</label>
 								<div class="col-sm-10">
 									<input type="email" name="email" value="" placeholder="E-Mail" id="input-email"
@@ -58,9 +72,12 @@
 							</div>
 							<div class="form-group required">
 								<label class="col-sm-2 control-label" for="input-telephone">Telephone</label>
-								<div class="col-sm-10">
+								<div class="col-sm-9">
 									<input type="tel" name="telephone" value="" placeholder="Telephone"
 										id="input-telephone" class="form-control">
+								</div>
+								<div class="col-sm-1">
+									<button style="width:100%;" class="btn btn-warning" disabled>인증하기</button>
 								</div>
 							</div>
 							<div class="form-group">
@@ -70,14 +87,31 @@
 										class="form-control">
 								</div>
 							</div>
+							<div class="form-group required">
+								<label class="col-sm-2 control-label" for="input-lastname">통장사본</label>
+								<div class="col-sm-10">
+									<input type="text" name="lastname" value=""class="form-control">
+								</div>
+							</div>
+							<div class="form-group required">
+								<label class="col-sm-2 control-label" for="input-lastname">신분증 혹은 사업자등록증 사본</label>
+								<div class="col-sm-10">
+									<input type="text" name="lastname" value=""class="form-control">
+								</div>
+							</div>
 						</fieldset>
 						<fieldset id="address">
-							<legend>Your Address</legend>
+							<legend>주소 정보</legend>
 							<div class="form-group">
-								<label class="col-sm-2 control-label" for="input-company">Company</label>
+								<label class="col-sm-2 control-label" for="input-company">환불 주소</label>
 								<div class="col-sm-10">
-									<input type="text" name="company" value="" placeholder="Company" id="input-company"
-										class="form-control">
+									<input type="text" name="company" class="form-control">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-sm-2 control-label" for="input-company">사업장 주소</label>
+								<div class="col-sm-10">
+									<input type="text" name="company" class="form-control">
 								</div>
 							</div>
 							<div class="form-group required">
@@ -95,50 +129,15 @@
 								</div>
 							</div>
 							<div class="form-group required">
-								<label class="col-sm-2 control-label" for="input-city">City</label>
-								<div class="col-sm-10">
-									<input type="text" name="city" value="" placeholder="City" id="input-city"
-										class="form-control">
-								</div>
-							</div>
-							<div class="form-group required">
 								<label class="col-sm-2 control-label" for="input-postcode">Post Code</label>
 								<div class="col-sm-10">
 									<input type="text" name="postcode" value="" placeholder="Post Code"
 										id="input-postcode" class="form-control">
 								</div>
 							</div>
-							<div class="form-group required">
-								<label class="col-sm-2 control-label" for="input-country">Country</label>
-								<div class="col-sm-10">
-									<select name="country_id" id="input-country" class="form-control">
-										<option value=""> --- Please Select --- </option>
-										<option value="244">Aaland Islands</option>
-										<option value="1">Afghanistan</option>
-										<option value="2">Albania</option>
-										<option value="3">Algeria</option>
-										<option value="4">American Samoa</option>
-										<option value="5">Andorra</option>
-										<option value="6">Angola</option>
-									</select>
-								</div>
-							</div>
-							<div class="form-group required">
-								<label class="col-sm-2 control-label" for="input-zone">Region / State</label>
-								<div class="col-sm-10">
-									<select name="zone_id" id="input-zone" class="form-control">
-										<option value=""> --- Please Select --- </option>
-										<option value="3513">Aberdeen</option>
-										<option value="3514">Aberdeenshire</option>
-										<option value="3515">Anglesey</option>
-										<option value="3516">Angus</option>
-
-									</select>
-								</div>
-							</div>
 						</fieldset>
 						<fieldset>
-							<legend>Your Password</legend>
+							<legend>비밀번호</legend>
 							<div class="form-group required">
 								<label class="col-sm-2 control-label" for="input-password">Password</label>
 								<div class="col-sm-10">

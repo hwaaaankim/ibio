@@ -256,6 +256,12 @@ public class AdminController {
 		return "administration/ibio/basic/detail/memberCalculationManagerDetail";
 	}
 	
+	@GetMapping("/dealerCalculationManagerList")
+	public String dealerCalculationManagerList() {
+		
+		return "administration/ibio/basic/select/dealerCalculationManagerList";
+	}
+	
 	@GetMapping("/dealerCalculationManager")
 	public String dealerCalculationManager() {
 		
