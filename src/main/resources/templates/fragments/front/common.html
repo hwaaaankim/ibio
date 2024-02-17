@@ -126,10 +126,10 @@
 										<li> <a href="/member/refundProduct"> <img class="image_flag"
 											src="/front/image/catalog/flags/ar.png" alt="Arabic"
 											title="Arabic" /> 환불신청 </a> </li>
-										<li> <a href="/dealer"> <img class="image_flag"
+										<li sec:authorize = "hasAnyRole('DEALER', 'ADMIN')"> <a href="/dealer"> <img class="image_flag"
 													src="/front/image/catalog/flags/ar.png" alt="Arabic"
 													title="Arabic" /> 제품 관리자 </a> </li>	
-										<li> <a href="/admin"> <img class="image_flag"
+										<li sec:authorize = "hasRole('ADMIN')"> <a href="/admin"> <img class="image_flag"
 													src="/front/image/catalog/flags/ar.png" alt="Arabic"
 													title="Arabic" /> 사이트 관리자 </a> </li>			
 									</ul>
